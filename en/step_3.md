@@ -5,7 +5,7 @@
 The chart looks good, but almost 150 nations have competed in the Olympics. You're going to load that data from a file, instead of having to type it all in!
 </div>
 <div>
-![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="200px"}
+![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="300px"}
 </div>
 </div>
 
@@ -171,7 +171,7 @@ for line in lines[1:]: # Start from the item at index 1
 
 **Test:** Run your code and look at the chart it creates. Try hovering over some of the columns, or clicking on the names of teams to add and remove them from the chart.
 
-![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="200px"}
+![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="400px"}
 
 --- /task ---
 
