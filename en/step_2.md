@@ -20,3 +20,113 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 The starter project already has some code that imports the `pygal` library, which you will use to draw your chart.
 
 [[[pygal-library]]]
+
+### Make a chart
+
+--- task ---
+
+Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, then give it a title.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 4 
+line_highlights: 5-6
+---
+# Create a chart
+chart = Bar()
+chart.title = 'Olympic medals'
+--- /code ---
+
+--- /task ---
+
+`title` is an **attribute** of your `chart`. Attributes are variables connected to an object — in this case the `chart`. You can access attributes using `.`, like you did with `chart.title`.
+
+--- task ---
+
+`chart` also has functions connected with it. Call `chart.render()` to display the chart.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 11 
+line_highlights: 12
+---
+# Display the chart
+chart.render()
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see the chart
+
+![The words 'Olympic medals' on a black background](images/empty_chart.png){:width="300px"}
+
+--- /task ---
+
+### Add some data
+
+Python can store related data in the form of a **list**. You can create lists using square brackets `[]`. Items in a list are separated with commas.
+
+--- task ---
+
+Create three lists of data to display on your chart.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 8 
+line_highlights: 9-11
+---
+# Add data to the chart
+us = ['United States', 2399]
+ru = ['Russia', 1413]
+gb = ['Great Britain', 1304]
+
+--- /code ---
+
+--- /task ---
+
+When you store something it gets an **index** — a number, starting from `0`, that tells you the item's position in the list.
+
+--- task ---
+
+Indexes can be used to get an item from a list by using the name of the list and `[]`. For example: `my_list[3]` will get the *fourth* item in `my_list`, because Python starts counting from `0`.
+
+Use the indexes of the lists you created to put their values on the chart, using `chart.add()`.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 11 
+line_highlights: 13-15
+---
+gb = ['Great Britain', 1304]
+
+chart.add(us[0], us[1])
+chart.add(ru[0], ru[1])
+chart.add(gb[0], gb[1])
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see the chart
+
+![A column chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+
+--- /task ---
+
+--- save ---
