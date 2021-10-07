@@ -19,7 +19,7 @@ You will:
 Run the program to load the chart. Notice that the chart is interactive. Try clicking the names of different nations to see them dissappear and reappear in the chart.
 </div>
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/9c61a211bf?outputOnly=true&runOption=run" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/9c61a211bf?outputOnly=true&runOption=run" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 </div>
 --- /task ---
