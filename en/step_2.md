@@ -64,7 +64,7 @@ chart.render()
 
 --- task ---
 
-**Test:** Run your code to see the chart
+**Test:** Run your code to see the chart. It will be empty, because it doesn't have data yet.
 
 ![The words 'Olympic medals' on a black background](images/empty_chart.png){:width="300px"}
 
@@ -99,9 +99,9 @@ When you store something it gets an **index** — a number, starting from `0`, t
 
 --- task ---
 
-Indexes can be used to get an item from a list by using the name of the list and `[]`. For example: `my_list[3]` will get the *fourth* item in `my_list`, because Python starts counting from `0`.
+Indexes can be used to get an item from a list by using the name of the list and `[]`. For example: `my_list[3]` will get the *fourth* item in `my_list`, because indexes start at `0`.
 
-Use the indexes of the lists you created to put their values on the chart, using `chart.add()`.
+Use the indexes of your lists and `chart.add()` to display your data.
 
 --- code ---
 ---
@@ -130,3 +130,5 @@ chart.add(gb[0], gb[1])
 --- /task ---
 
 --- save ---
+
+<mark>Add debug steps</mark>
