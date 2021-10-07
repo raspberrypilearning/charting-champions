@@ -1,59 +1,30 @@
 ## Introduction
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+Discover the power of lists in Python by creating an interactive chart of Olympic medals won by different nations.
 
-### What you will make
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896 and are a contest for thousands of athletes, representing hundreds of nations from around the world, across dozens of sporting events. The modern games are inspired by the ancient contests held in Olympia, Greece.
+</p>
+
+You will:
+ - Use **lists** to store related data
+ - Create a **chart** using the `pygal` library
+ - Load data by having your program **read a file**
 
 --- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
+--- task ---
+### Try it
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-basis: 175px; flex-grow: 1">  
+Run the program to load the chart. Notice that the chart is interactive. Try clicking the names of different nations to see them dissappear and reappear in the chart.
 </div>
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/9c61a211bf?outputOnly=true&runOption=run" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+</div>
+--- /task ---
 --- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+![Completed project](images/completed_preview.png)
 --- /print-only ---
-
---- collapse ---
----
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
