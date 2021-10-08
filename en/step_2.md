@@ -5,7 +5,7 @@
 Create a chart and some lists of data to display on it.
 </div>
 <div>
-![A column chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
 </div>
 </div>
 
@@ -125,7 +125,7 @@ chart.add(gb[0], gb[1])
 
 **Test:** Run your code to see the chart
 
-![A column chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
 
 --- /task ---
 

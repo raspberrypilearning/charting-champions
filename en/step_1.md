@@ -3,7 +3,7 @@
 Discover the power of lists in Python by creating an interactive chart of Olympic medals won by different nations.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896 and are a contest for thousands of athletes, representing hundreds of nations from around the world, across dozens of sporting events. The modern games are inspired by the ancient contests held in Olympia, Greece.
+<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896 and are a contest for thousands of athletes, representing hundreds of nations from around the world, across dozens of sporting events. The modern games are inspired by ancient contests held in Olympia, Greece.
 </p>
 
 You will:

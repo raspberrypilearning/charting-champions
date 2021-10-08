@@ -5,7 +5,7 @@
 The chart looks good, but almost 150 nations have competed in the Olympics. You're going to load that data from a file, instead of having to type it all in!
 </div>
 <div>
-![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="300px"}
+![A bar chart showing the medal counts of many nations](images/completed_preview.png){:width="300px"}
 </div>
 </div>
 
@@ -30,15 +30,21 @@ line_number_start: 8
 line_highlights: 9-10
 ---
 # Add data to the chart
-with open('data.csv') as file:
-  data = file.read()
+with open('data.csv') as f:
+  data = f.read()
 --- /code ---
 
 --- /task ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**CSV files**</span> are **c**omma **s**eparted **v**alues files. They contain data in rows and columns. Each line is a row, with commas seperating that row's values into columns.
+</p>
+
 --- task ---
 
-The text in `data` is one long string, which needs to be broken up into the names of nations and the number of medals they have won. Use the string's `splitlines()` function, which breaks it into a list of lines. Then `print()` those lines.
+The text in `data` is one long string, which needs to be split into the names of teams and the number of medals they have won. 
+
+Use the string's `splitlines()` function, which splits it into a list of lines. Then `print()` those lines.
 
 --- code ---
 ---
@@ -48,8 +54,8 @@ line_numbers: true
 line_number_start: 9 
 line_highlights: 11-12
 ---
-with open('data.csv') as file:
-  data = file.read()
+with open('data.csv') as f:
+  data = f.read()
   lines = data.splitlines()
   print('Lines: ', lines)
 --- /code ---
@@ -57,11 +63,13 @@ with open('data.csv') as file:
 --- /task ---
 
 --- task ---
+1
+**Test:** Run your code and look at the text it prints out. 
 
-**Test:** Run your code and look at the text it prints out. Notice how the list is surrounded by the same square brackets — `[]` — you used to make a list. Also, the items in the list are separted by commas, just like your lists were.
+Notice how the list is surrounded by the same square brackets — `[]` — you used to make a list. Also, the strings in the list are separted by commas, just like your lists were.
 
 ```
-Lines:  ['team,medals', 'United States,2399', 'Russia,1413', 'Great Britain,1304', 'France,780', 'Germany,671', 'Italy,549', 'Sweden,483', 'Hungary,476', 'China,473', 'Australia,468', 'Japan,398' … 'Sudan,1', 'Togo,1', 'Tonga,1', 'United Arab Emirates,1', 'Virgin Islands,1', 'Liechtenstein,0']
+Lines:  ['team,medals', 'United States,2399', 'Russia,1413', … 'Virgin Islands,1', 'Liechtenstein,0']
 ```
 
 --- /task ---
@@ -70,7 +78,7 @@ The strings in the `lines` list are all made up of two pieces separated by a com
 
 --- task ---
 
-Loops and lists work really well together, so splitting every string in `lines` apart is very quick: Use a `for` loop and each string's `split()` function to split it into a list — one item for each side of the comma. Then print them out.
+Use a `for` loop to go through `lines` and use each string's `split()` function to split it into a list — one item for each side of the comma. Then print them out.
 
 --- code ---
 ---
@@ -80,8 +88,8 @@ line_numbers: true
 line_number_start: 9 
 line_highlights: 14-16
 ---
-with open('data.csv') as file:
-  data = file.read()
+with open('data.csv') as f:
+  data = f.read()
   lines = data.splitlines()
   print('Lines: ', lines)
 
@@ -96,7 +104,7 @@ for line in lines:
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out. Each entry should be a list of a nation and their medal count.
+**Test:** Run your code and look at the text it prints out. Each line should be a list of a nation and their medal count.
 
 ```
 Entries:  ['Tonga', '1']
@@ -126,7 +134,7 @@ for line in lines:
   print('Entries: ', entries)
   team = entries[0]
   medals = entries[1]
-  chart.add(team, int(medals))  # Convert the medals string to a number for the chart
+  chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
 --- /task ---
@@ -135,19 +143,21 @@ for line in lines:
 
 **Test:** Run your code and see what happens.
 
-You should get an error something like this:
+You should get an error like this:
 
 ```
 ValueError: invalid literal for int() with base 10: 'medals' on line 19 in main.py
 ```
 
-This message means Python can't convert 'medals' into a number with `int()`. This has happened because the first line of `data.csv` is different to all the others: instead of containing a team and the number of medals they have won, it contains the headings 'team' and 'medals'.
+This message means Python can't convert 'medals' into a number with `int()`. This is because the first line of `data.csv` is different to all the others: instead of a team and the number of medals they have won, it is the headings 'team' and 'medals'.
 
 --- /task ---
 
+To fix the bug, you need to skip the first line of `data.csv`, which becomes the string at index `0` in `lines`. 
+
 --- task ---
 
-To fix the bug, you need to skip the first line of `data.csv`, which becomes the item at index `0` in `lines`. Lists can be **sliced** to skip items at the start by using `my_list[index:]` where `index` is the index of the item you want to start from. Slice `lines` when you use in the `for` loop to skip the first line.
+Lists can be **sliced** to skip items at the start by using `my_list[start:]` where `start` is the index of the item you want to start from. Slice `lines` when you use in the `for` loop to skip the first line.
 
 --- code ---
 ---
@@ -162,16 +172,18 @@ for line in lines[1:]: # Start from the item at index 1
   print('Entries: ', entries)
   team = entries[0]
   medals = entries[1]
-  chart.add(team, int(medals))  # Convert the medals string to a number for the chart
+  chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the columns, or clicking on the names of teams to add and remove them from the chart.
+**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
 ![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="400px"}
+
+<mark>Make this a gif?</mark>
 
 --- /task ---
 
