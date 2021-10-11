@@ -1,4 +1,4 @@
-title: charting-champions
+title: Charting Champions
 hero_image: images/banner.png
 description: Discover the power of lists in Python by creating an interactive chart of Olympic medals.
 version: 4
@@ -11,9 +11,9 @@ steps:
   - title: Load more data
   - title: Reflection
     knowledge_quiz:
-    path: quiz1
-    version: 1
-    questions: 3
-    passing_score: 3
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
   - title: Upgrade your project
   - title: What next?
