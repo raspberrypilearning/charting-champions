@@ -8,7 +8,7 @@ last_tested: "2021-10-07"
 steps:
   - title: Introduction
   - title: Charting some data
-  - title: Load more data
+  - title: Load data from a file
   - title: Reflection
     knowledge_quiz:
       path: quiz1
