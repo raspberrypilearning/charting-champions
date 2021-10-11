@@ -22,7 +22,7 @@ You created and used a lot of lists in your project. Which of these is the prope
 
   --- feedback ---
 
-  Close! But lists don't use parenthesies — `()`.
+  Close! But lists don't use parentheses — `()`.
 
   --- /feedback ---
 
@@ -38,7 +38,7 @@ You created and used a lot of lists in your project. Which of these is the prope
 
   --- feedback ---
 
-  Not quite, list items are separated by more than just spaces.
+  Not quite, list items are separated by more than spaces.
 
   --- /feedback ---
 

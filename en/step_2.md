@@ -5,7 +5,7 @@
 Create a chart and some lists of data to display on it.
 </div>
 <div>
-![A bar chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medals won by the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
 </div>
 </div>
 
@@ -17,7 +17,7 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 --- /task ---
 
-The starter project already has some code that imports the `pygal` library, which you will use to draw your chart.
+The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
 
 [[[pygal-library]]]
 
@@ -25,7 +25,7 @@ The starter project already has some code that imports the `pygal` library, whic
 
 --- task ---
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, then give it a title.
+Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`. Then give your chart a title.
 
 --- code ---
 ---
@@ -42,7 +42,7 @@ chart.title = 'Olympic medals'
 
 --- /task ---
 
-`title` is an **attribute** of your `chart`. Attributes are variables connected to an object — in this case the `chart`. You can access attributes using `.`, like you did with `chart.title`.
+`title` is an **attribute** of your `chart`. Attributes are variables connected to an object. You can use attributes with `.`. For example, `chart.title`.
 
 --- task ---
 
@@ -68,16 +68,16 @@ chart.render()
 
 ![The words 'Olympic medals' on a black background](images/empty_chart.png){:width="300px"}
 
-**Debug**: If you see an error about `Bar()` or  `chart.render()` not being defined:
+**Debug**: If you see an error about `Bar()` or  `chart.render()` being `not defined`:
 
- - If the error is for `Bar()`, make sure it has an uppercase 'B' at the start, and parenthesies at the end.
- - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the parenthesies at the end.
+ - If the error is for `Bar()`, make sure it has an uppercase 'B' at the start, and parentheses at the end.
+ - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the parentheses at the end.
 
 --- /task ---
 
 ### Add some data
 
-Python can store related data in the form of a **list**. You can create lists using square brackets `[]`. Items in a list are separated with commas.
+Python can store related data as a **list**. You can create lists using square brackets `[]`. Items in a list are separated with commas.
 
 --- task ---
 
@@ -100,11 +100,11 @@ gb = ['Great Britain', 1304]
 
 --- /task ---
 
-When you store something it gets an **index**: a number, starting from `0`, that tells you the item's position in the list.
+When you store something it gets an **index**: a number that tells you the item's position in the list. List indexes start from `0`, instead of `1`.
 
 --- task ---
 
-Indexes can be used to get an item from a list by using the name of the list and `[]`. For example: `my_list[3]` will get the *fourth* item in `my_list`, because indexes start at `0`.
+You can get an item from a list by its index. For example: `my_list[3]` will get the *fourth* item in `my_list`, because indexes start at `0`.
 
 Use the indexes of your lists and `chart.add()` to display your data.
 
@@ -130,9 +130,9 @@ chart.add(gb[0], gb[1])
 
 **Test:** Run your code to see the chart
 
-![A bar chart showing the medal counts of the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medals won by the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
 
-**Debug**: If you see a message about an `IndexError`, it means your code is trying to get a value from a list index (e.g. `us[2]`) that hasn't had a value stored in it. To fix this:
+**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `us[2]`) that doesn't exist. To fix this:
  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 

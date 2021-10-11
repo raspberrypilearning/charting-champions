@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, try changing how your chart appears, or what it displays.
+In this step, change how your chart looks, or what data it uses.
 </div>
 <div>
 ![A pie chart showing the running time of Marvel films](images/mcu_pie.png){:width="300px"}
@@ -10,18 +10,18 @@ In this step, try changing how your chart appears, or what it displays.
 </div>
 
 ### Use a Pie chart
-Instead of displaying your data with a bar chart, you can use a pie chart for a different look, or to show how something has been split up.
+Try using a pie chart for a different look, or to show how something is divided.
 
 --- task ---
 
-To create a pie chart instead of a bar chart, change the function you import from `pygal`, and the function call you use to create `chart`, to be `Pie` instead of `Bar`. 
+To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`. 
 
 --- /task ---
 
 ### Display the first ten items
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-There's a lot of data displayed on the chart at the moment. Try displaying only the first ten items, so it's easier to see and compare them.
+Try showing only the first ten items on your chart, so it's easier to see and compare them.
 </div>
 <div>
 ![A chart showing the carbon dioxide emissions of ten countries](images/10_co2.png){:width="300px"}
@@ -30,7 +30,7 @@ There's a lot of data displayed on the chart at the moment. Try displaying only 
 
 --- task ---
 
-To display fewer items on the chart, you can slice the `lines` list from the end as well as from the start. You used `lines[1:]` to start from the string at postion `1`. If you use `lines[:5]`, every string with an index of `5` or higher will be ignored. 
+To display fewer items on the chart, you can slice the `lines` list from the end as well as from the start. You used `lines[1:]` to start from the string at position `1`. If you use `lines[:5]`, Python will skip every item with an index of `5` or higher. 
 
 --- /task ---
 
@@ -39,18 +39,20 @@ You can load and chart any data that's in a `.csv` file with the program you've 
 
 --- task ---
 
-**Choose:** Pick a different datafile in your project. Two have been included for you:
+**Choose:** Pick a different datafile in your project. There are two available:
 
- - `mcu.csv` contains the runtime and gross income from Marvel Cinematic Universe films
- - `carbon.csv` contains the total (in thousands of metric tons) and per-person (in metric tons) carbon dioxide emmisions of a variety of different countries and regions
+ - `mcu.csv` is the runtime and gross income from Marvel Cinematic Universe films
+ - `carbon.csv` is the total and per-person carbon dioxide emissions of different countries and regions
 
 --- /task ---
 
 --- task ---
 
-Update the code that reads from `data.csv` to read from your new file. These files have more than one set of interesting numbers — use different indexes in the `enteries` list to choose between them. 
+Update the code that reads from `data.csv` to read from your new file. 
 
-The carbon dioxide data uses numbers with decimal places. To convert them from text strings, you'll need to use `float()` instead of `int()`.
+These files have more than one column of numbers. Use indexes on the `entries` list to choose which to add to your chart. 
+
+The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
 
 --- /task ---
 

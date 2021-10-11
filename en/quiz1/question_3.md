@@ -45,7 +45,7 @@ blue
 
   --- feedback ---
 
-  Not exactly, `colours[2:]` doesn't select the item at index `2` in the list — that would be `colours[2]`. Instead, the items with an index lower than `2` are skipped. This is called slicing the list.
+  Not exactly, `colours[2:]` doesn't select the item at index `2` in the list. Selecting would be `colours[2]`, the `:` makes a big difference! Instead, the items with an index lower than `2` are skipped. This is called slicing the list.
 
   --- /feedback ---
 

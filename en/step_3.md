@@ -2,22 +2,22 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The chart looks good, but almost 150 nations have competed in the Olympics. You're going to load that data from a file, instead of having to type it all in!
+The chart looks good! But, almost 150 nations have competed in the Olympics. To include them, you're going to load their data from a file. It will save a lot of typing!
 </div>
 <div>
-![A column chart showing the medal counts of many nations. Information appears when the mouse hovers over a column. Columns disappear as the names of nations are clicked on.](images/adjust_chart.gif){:width="300px"}
+![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Delete the lists and `chart.add()` lines from the previous step — that data is in the file you will be loading.
+Delete your lists and `chart.add()` lines from the previous step. That data is in the file you will be loading.
 
 --- /task ---
 
 --- task ---
 
-The `data.csv` file included in the starter project contains the data you need. You can load the file's contents into a variable by using `with open() as` and `read()`.
+The `data.csv` file included in the starter project contains the data you need. You can load the file into a variable by using `with open() as` and `read()`.
 
 [[[generic-python-file-read]]]
 
@@ -37,12 +37,12 @@ with open('data.csv') as f:
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparted **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas seperating that row's values into columns.
+<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparated **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
 </p>
 
 --- task ---
 
-The text in `data` is one long string, which needs to be split into the names of teams and the number of medals they have won. 
+The text in `data` is one long string, which you need to split into the names of teams and the number of medals they have won. 
 
 Use the string's `splitlines()` function, which splits it into a list of lines. Then `print()` those lines.
 
@@ -66,23 +66,25 @@ with open('data.csv') as f:
 
 **Test:** Run your code and look at the text it prints out. 
 
-Notice that the list is surrounded by the same square brackets — `[]` — you used to make a list. Also, the items in the list are separted by commas, just like your lists were.
+Notice that the list has the same square brackets (`[]`) you used to make a list. Also, the items in the list are separated by commas, like your lists were.
 
 ```
 Lines:  ['team,medals', 'United States,2399' … 'Liechtenstein,0']
 ```
 
-**Debug:** Make sure you have indented the code under `with`, like in the example above.
+**Debug:** If the code doesn't work, make sure you have indented it under `with`, like in the example above.
 
-**Debug:** If you see a message about `read` or `splitlines` being 'not defined', then check that you have included `f.` before `read()` or `data` before `splitlines()`, so Python knows which variables have those functions.
+**Debug:** If you see a message about `read` or `splitlines` being 'not defined':
+ - check that you have included `f.` before `read()` 
+ - check that you have included `data` before `splitlines()`
 
 --- /task ---
 
-The strings in the `lines` list are all made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces separately. 
+The strings in the `lines` list are all made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
 --- task ---
 
-Use a `for` loop to go through `lines` and use each string's `split()` function to split it into a list — one item for each side of the comma. Then print them out.
+Use a `for` loop on `lines`, along with each string's `split()` function, to split every string into a list. You will get one list item for each side of the comma in the text string. Then print those lists out.
 
 --- code ---
 ---
@@ -117,7 +119,7 @@ Entries:  ['Virgin Islands', '1']
 Entries:  ['Liechtenstein', '0']
 ```
 
-**Debug:** If your `entries` are printing out as lists with only one item — `Entries:  ['Tonga,1']` instead of `Entries:  ['Tonga', '1']` — then check that you have `','` in the `()` of `line.split()`.
+**Debug:** If your `entries` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
 
 **Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
 
@@ -143,7 +145,7 @@ for line in lines:
   chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
-**Tip:** Because they're not part of creating the chart, you can put a `#` in front of the code that prints `lines` and `entries` when you're not using them to debug your program. This will turn that code into comments, so Python will ignore it.
+**Tip:** You can put a `#` in front of the code that prints `lines` and `entries` when you're not using them to debug your program. This will turn that code into comments, so Python will ignore it.
 
 --- /task ---
 
@@ -157,7 +159,7 @@ You should get an error like this:
 ValueError: invalid literal for int() with base 10: 'medals' on line 19 in main.py
 ```
 
-This message means Python can't convert 'medals' into a number with `int()`. This is because the first line of `data.csv` is different to all the others: instead of a team and the number of medals they have won, it is the headings 'team' and 'medals'.
+This message means Python can't convert 'medals' into a number with `int()`. This is because the first line of `data.csv` is different to all the others. Instead of a team and the number of medals they have won, the first line is the headings: 'team' and 'medals'.
 
 **Debug:** There are some other bugs you might find here:
 
@@ -174,9 +176,9 @@ If you get an empty chart instead of this error, check that you have `int(medals
 ---
 title: I get a message about an 'IndexError'
 ---
-If you see a message about an `IndexError` instead, it means your code is trying to get a value from a list index (e.g. `entries[2]`) that hasn't had a value stored in it. To fix this:
+If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `us[2]`) that doesn't exist. To fix this:
  - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes
- - Check the printed `entries` lists to be sure they have two items — `Entries:  ['Tonga', '1']`, not `Entries:  ['Tonga,1']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
+ - Check the printed `entries` lists to be sure they have two items. `Entries:  ['Tonga', '1']`, not `Entries:  ['Tonga,1']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
 
 --- /collapse ---
 
@@ -186,7 +188,7 @@ To fix the bug, you need to skip the first line of `data.csv` — the string at 
 
 --- task ---
 
-Lists can be **sliced** to skip items at the start by using `my_list[start:]` — where `start` is the index of the item you want to start from, e.g. `my_list[3:]`. Slice `lines` when you use in the `for` loop to skip the first line.
+Lists can be **sliced** to skip items at the start. To slice a list use `my_list[start:]` — where `start` is the index of the item you want to start from. For example `my_list[3:]`. Slice `lines` when you use it in the `for` loop to skip the first line.
 
 --- code ---
 ---
@@ -210,7 +212,7 @@ for line in lines[1:]: # Start from the item at index 1
 
 **Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
-![A column chart showing the medal counts of many nations. Information appears when the mouse hovers over a column. Columns disappear as the names of nations are clicked on.](images/adjust_chart.gif){:width="400px"}
+![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
 
 --- /task ---
 

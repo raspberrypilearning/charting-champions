@@ -1,10 +1,10 @@
 ## What next?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) pathway, you can move on to the [Solar system simulator](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In this project, you will create a simulation of the solar system that teaches the user about the planets.
+If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Solar system](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In that project, you will make a model of the solar system to teach people about the planets.
 
 --- print-only ---
 
-![The solar system simulator project](images/solar_system_simulator.png)
+![The solar system project](images/solar_system_simulator.png)
 
 --- /print-only ---
 
