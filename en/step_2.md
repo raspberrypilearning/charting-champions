@@ -11,7 +11,7 @@ Create a chart and some lists of data to display on it.
 
 --- task ---
 
-Open the [Charting champions starter project](https://trinket.io/python/e5f8529691){:target="_blank"}. Trinket will open in another browser tab.
+Open the [Charting champions starter project](https://trinket.io/python/61b2224327){:target="_blank"}. Trinket will open in another browser tab.
 
 If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
