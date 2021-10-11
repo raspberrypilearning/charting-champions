@@ -181,7 +181,9 @@ To fix the bug, you need to skip the first line of `data.csv` — the string at 
 
 --- task ---
 
-Lists can be **sliced** to skip items at the start. To slice a list use `my_list[start:]` — where `start` is the index of the item you want to start from. For example `my_list[3:]`. Slice `lines` when you use it in the `for` loop to skip the first line.
+Lists can be **sliced** to skip items at the start. To slice a list use `my_list[start:]` — where `start` is the index of the item you want to start from.
+
+Slice `lines` when you use it in the `for` loop to skip the first line.
 
 --- code ---
 ---
