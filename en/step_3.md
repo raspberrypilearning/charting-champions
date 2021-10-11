@@ -5,7 +5,7 @@
 The chart looks good, but almost 150 nations have competed in the Olympics. You're going to load that data from a file, instead of having to type it all in!
 </div>
 <div>
-![A bar chart showing the medal counts of many nations](images/completed_preview.png){:width="300px"}
+![A column chart showing the medal counts of many nations. Information appears when the mouse hovers over a column. Columns disappear as the names of nations are clicked on.](images/adjust_chart.gif){:width="300px"}
 </div>
 </div>
 
@@ -37,7 +37,7 @@ with open('data.csv') as f:
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are **c**omma **s**eparted **v**alues files. They contain data in rows and columns. Each line is a row, with commas seperating that row's values into columns.
+<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparted **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas seperating that row's values into columns.
 </p>
 
 --- task ---
@@ -63,14 +63,18 @@ with open('data.csv') as f:
 --- /task ---
 
 --- task ---
-1
+
 **Test:** Run your code and look at the text it prints out. 
 
-Notice how the list is surrounded by the same square brackets — `[]` — you used to make a list. Also, the strings in the list are separted by commas, just like your lists were.
+Notice that the list is surrounded by the same square brackets — `[]` — you used to make a list. Also, the items in the list are separted by commas, just like your lists were.
 
 ```
-Lines:  ['team,medals', 'United States,2399', 'Russia,1413', … 'Virgin Islands,1', 'Liechtenstein,0']
+Lines:  ['team,medals', 'United States,2399' … 'Liechtenstein,0']
 ```
+
+**Debug:** Make sure you have indented the code under `with`, like in the example above.
+
+**Debug:** If you see a message about `read` or `splitlines` being 'not defined', then check that you have included `f.` before `read()` or `data` before `splitlines()`, so Python knows which variables have those functions.
 
 --- /task ---
 
@@ -95,10 +99,10 @@ with open('data.csv') as f:
 
 for line in lines:
   entries = line.split(',')
-  print('Entries: ', entries)
+  print('Entries: ', entries) # Print each entry on its own line
 --- /code ---
 
-**Tip:** `split()` can split a string into a list around any text you want. You can split on any punctuation, a letter, or even whole words.
+**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
 
 --- /task ---
 
@@ -113,7 +117,9 @@ Entries:  ['Virgin Islands', '1']
 Entries:  ['Liechtenstein', '0']
 ```
 
-**Tip:** Because they're not part of creating the chart, you can place a `#` in front of the code that prints `lines` and `entries` when you're not using them to debug your program. This will turn that code into comments, so Python will ignore it.
+**Debug:** If your `entries` are printing out as lists with only one item — `Entries:  ['Tonga,1']` instead of `Entries:  ['Tonga', '1']` — then check that you have `','` in the `()` of `line.split()`.
+
+**Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
 
 --- /task ---
 
@@ -137,6 +143,8 @@ for line in lines:
   chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
+**Tip:** Because they're not part of creating the chart, you can put a `#` in front of the code that prints `lines` and `entries` when you're not using them to debug your program. This will turn that code into comments, so Python will ignore it.
+
 --- /task ---
 
 --- task ---
@@ -151,13 +159,34 @@ ValueError: invalid literal for int() with base 10: 'medals' on line 19 in main.
 
 This message means Python can't convert 'medals' into a number with `int()`. This is because the first line of `data.csv` is different to all the others: instead of a team and the number of medals they have won, it is the headings 'team' and 'medals'.
 
+**Debug:** There are some other bugs you might find here:
+
+--- collapse ---
+---
+title: I don't get an error, but my chart is empty
+---
+
+If you get an empty chart instead of this error, check that you have `int(medals)` in your `chart.add()`.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: I get a message about an 'IndexError'
+---
+If you see a message about an `IndexError` instead, it means your code is trying to get a value from a list index (e.g. `entries[2]`) that hasn't had a value stored in it. To fix this:
+ - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes
+ - Check the printed `entries` lists to be sure they have two items — `Entries:  ['Tonga', '1']`, not `Entries:  ['Tonga,1']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
+
+--- /collapse ---
+
 --- /task ---
 
-To fix the bug, you need to skip the first line of `data.csv`, which becomes the string at index `0` in `lines`. 
+To fix the bug, you need to skip the first line of `data.csv` — the string at index `0` in `lines`. 
 
 --- task ---
 
-Lists can be **sliced** to skip items at the start by using `my_list[start:]` where `start` is the index of the item you want to start from. Slice `lines` when you use in the `for` loop to skip the first line.
+Lists can be **sliced** to skip items at the start by using `my_list[start:]` — where `start` is the index of the item you want to start from, e.g. `my_list[3:]`. Slice `lines` when you use in the `for` loop to skip the first line.
 
 --- code ---
 ---
@@ -181,12 +210,8 @@ for line in lines[1:]: # Start from the item at index 1
 
 **Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
 
-![A column chart showing the medal counts of many nations](images/completed_preview.png){:width="400px"}
-
-<mark>Make this a gif?</mark>
+![A column chart showing the medal counts of many nations. Information appears when the mouse hovers over a column. Columns disappear as the names of nations are clicked on.](images/adjust_chart.gif){:width="400px"}
 
 --- /task ---
 
 --- save ---
-
-<mark>Add debug steps</mark>
