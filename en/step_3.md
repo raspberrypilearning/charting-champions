@@ -68,9 +68,7 @@ with open('data.csv') as f:
 
 Notice that the list has the same square brackets (`[]`) you used to make a list. Also, the items in the list are separated by commas, like your lists were.
 
-```
-Lines:  ['team,medals', 'United States,2399' … 'Liechtenstein,0']
-```
+![A long list of text strings, printed out.](images/lines.png){:width="400px"}
 
 **Debug:** If the code doesn't work, make sure you have indented it under `with`, like in the example above.
 
@@ -110,14 +108,9 @@ for line in lines:
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out. Each line should be a list of a nation and their medal count.
+**Test:** Run your code and look at the text it prints out. Each line should be a list with two items.
 
-```
-Entries:  ['Tonga', '1']
-Entries:  ['United Arab Emirates', '1']
-Entries:  ['Virgin Islands', '1']
-Entries:  ['Liechtenstein', '0']
-```
+![Many lists, each with two items, printed out.](images/entries.png){:width="400px"}
 
 **Debug:** If your `entries` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
 
