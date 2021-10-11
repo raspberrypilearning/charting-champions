@@ -18,7 +18,10 @@ You created and used a lot of lists in your project. Which of these is the prope
 
 --- choices ---
 
-- ( ) `names = ('cat', 'dog', 'rabbit')`
+- ( ) 
+```python
+names = ('cat', 'dog', 'rabbit')
+```
 
   --- feedback ---
 
@@ -26,7 +29,10 @@ You created and used a lot of lists in your project. Which of these is the prope
 
   --- /feedback ---
 
-- (x) `names = ['cat', 'dog', 'rabbit']`
+- (x) 
+```python
+names = ['cat', 'dog', 'rabbit']
+```
 
   --- feedback ---
 
@@ -34,7 +40,10 @@ You created and used a lot of lists in your project. Which of these is the prope
 
   --- /feedback ---
 
-- ( ) `names = ['cat' 'dog' 'rabbit']`
+- ( ) 
+```python
+names = ['cat' 'dog' 'rabbit']
+```
 
   --- feedback ---
 
@@ -42,7 +51,10 @@ You created and used a lot of lists in your project. Which of these is the prope
 
   --- /feedback ---
 
-- ( ) `names = ['cat': 'dog': 'rabbit']`
+- ( ) 
+```python
+names = ['cat': 'dog': 'rabbit']
+```
 
   --- feedback ---
 
