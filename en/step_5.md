@@ -77,7 +77,7 @@ Spider-Man: Far From Home,129,1131927996
 title: 2017 Carbon dioxide emission estimates
 ---
 
-<button onclick="navigator.clipboard.writeText('Region,Emissions (thousand metric tons of carbon dioxide),Emissions per person (metric tons of carbon dioxide)
+<button onclick="function(){navigator.clipboard.writeText('Region,Emissions (thousand metric tons of carbon dioxide),Emissions per person (metric tons of carbon dioxide)
 Albania,4342.011,1.511
 Algeria,130493.653,3.158
 Angola,18021.394,0.605
@@ -219,7 +219,7 @@ Venezuela (Boliv. Rep. of),113717.543,3.556
 Viet Nam,191243.601,2.002
 Yemen,8919.998,0.316
 Zambia,6007.872,0.351
-Zimbabwe,9714.938,0.588')">Copy data</button>
+Zimbabwe,9714.938,0.588')}">Copy data</button>
 
 ```
 Region,Emissions (thousand metric tons of carbon dioxide),Emissions per person (metric tons of carbon dioxide)
