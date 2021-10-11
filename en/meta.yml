@@ -10,5 +10,10 @@ steps:
   - title: Charting some data
   - title: Load more data
   - title: Reflection
+    knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
   - title: Upgrade your project
   - title: What next?
