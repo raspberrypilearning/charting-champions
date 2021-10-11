@@ -99,7 +99,7 @@ with open('data.csv') as f:
 
 for line in lines:
   entries = line.split(',')
-  print('Entries: ', entries) # Print each entry on its own line
+  print('Entries: ', entries) # Print each entry
 --- /code ---
 
 **Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
@@ -191,7 +191,7 @@ line_numbers: true
 line_number_start: 14 
 line_highlights: 14
 ---
-for line in lines[1:]: # Start from the item at index 1
+for line in lines[1:]: # Start from index 1
   entries = line.split(',')
   print('Entries: ', entries)
   team = entries[0]
