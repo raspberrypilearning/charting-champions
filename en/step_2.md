@@ -21,6 +21,42 @@ The starter project already has some code to import the `pygal` library, which y
 
 [[[pygal-library]]]
 
+If you are not using Trinket in your browser, you may need to install `pygal` before you can import it.
+
+--- collapse ---
+---
+title: Installing pygal
+---
+
+### On Windows
+In the Command Prompt type the following and press the enter key:
+
+```
+pip install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+### On a Mac
+In the Terminal type the following and press the enter key:
+
+```
+pip3 install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+### On Linux, including Raspberry Pi OS
+In the Terminal type the following and press the enter key:
+
+```
+pip install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+--- /collapse ---
+
 ### Make a chart
 
 --- task ---
