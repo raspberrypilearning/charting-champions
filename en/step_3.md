@@ -149,8 +149,6 @@ for line in lines:
 
 --- /task ---
 
-Now that you know you are getting the lists you want, you don't to keep printing `tally`.
-
 --- task ---
 
 Load your data into the chart using the same `for` loop you just created.
@@ -186,5 +184,16 @@ for line in lines:
  - Check the printed `tally` lists to be sure they have two items: `['Tonga', '1']`, not `['Tonga,1']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
 
 --- /task ---
+
+--- collapse ---
+---
+title: Show me how this code works
+---
+
+You can see the details of how your code loads data to the chart below:
+
+![A diagram showing how each line of code changes the variables in the program](images/code_flow.png){:width="500px"}
+
+--- /collapse ---
 
 --- save ---
