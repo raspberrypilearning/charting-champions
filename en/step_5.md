@@ -30,7 +30,20 @@ Try showing only the first ten items on your chart, so it's easier to see and co
 
 --- task ---
 
-To display fewer items on the chart, you can slice the `lines` list from the end as well as from the start. You used `lines[1:]` to start from the string at position `1`. If you use `lines[:5]`, Python will skip every item with an index of `5` or higher. 
+To display fewer items on the chart, only `add()` a certain number of items from the `lines` list. 
+
+You can use `range()` to make a list of numbers, then you can use those numbers as list indexes. For example, you could print the first five items on a list with this code:
+
+--- code ---
+---
+language: python
+filename: main.py
+---
+
+for i in range(5):
+  print(my_list[i])
+
+--- /code ---
 
 --- /task ---
 
@@ -42,7 +55,7 @@ You can load and chart any data that's in a `.csv` file with the program you've 
 **Choose:** Pick a different datafile in your project. There are two available:
 
  - `mcu.csv` is the runtime and gross income from Marvel Cinematic Universe films
- - `carbon.csv` is the total and per-person carbon dioxide emissions of different countries and regions
+ - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
 
 --- /task ---
 
@@ -50,7 +63,7 @@ You can load and chart any data that's in a `.csv` file with the program you've 
 
 Update the code that reads from `data.csv` to read from your new file. 
 
-These files have more than one column of numbers. Use indexes on the `entries` list to choose which to add to your chart. 
+These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart. 
 
 The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
 
