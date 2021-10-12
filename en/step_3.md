@@ -179,15 +179,10 @@ for line in lines:
 
 --- /task ---
 
---- collapse ---
----
-title: Show me how this code works
----
+--- save ---
+
+### How does this code work?
 
 You can see the details of how your code loads data to the chart below:
 
-![A diagram showing how each line of code changes the variables in the program](images/code_flow.png){:width="500px"}
-
---- /collapse ---
-
---- save ---
+![A diagram showing how each line of code changes the variables in the program](images/code_flow.png)
