@@ -40,13 +40,7 @@ with open('data.csv') as f:
 
 <div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparated **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-```
-United States,2399
-Russia,1413
-Great Britain,1304
-France,780
-Germany,671
-```
+![A few lines of a csv file](images/csv_sample.png){:width="400px"}
 </div>
 
 --- task ---
