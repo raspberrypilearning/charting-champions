@@ -153,8 +153,6 @@ Now that you know you are getting the lists you want, you don't to keep printing
 
 --- task ---
 
---- task ---
-
 Load your data into the chart using the same `for` loop you just created.
 
 --- code ---

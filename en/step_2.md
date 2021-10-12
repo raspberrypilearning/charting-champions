@@ -29,7 +29,7 @@ title: Installing pygal
 ---
 
 ### On Windows
-In the Command Prompt type the following and press the enter key:
+In the **Command Prompt** type the following and press the enter key:
 
 ```
 pip install pygal
@@ -38,7 +38,7 @@ pip install pygal
 Wait for the instllation to complete and then continue with the project.
 
 ### On a Mac
-In the Terminal type the following and press the enter key:
+In the **Terminal** type the following and press the enter key:
 
 ```
 pip3 install pygal
@@ -47,7 +47,7 @@ pip3 install pygal
 Wait for the instllation to complete and then continue with the project.
 
 ### On Linux, including Raspberry Pi OS
-In the Terminal type the following and press the enter key:
+In the **Terminal** type the following and press the enter key:
 
 ```
 pip install pygal
