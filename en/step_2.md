@@ -21,6 +21,42 @@ The starter project already has some code to import the `pygal` library, which y
 
 [[[pygal-library]]]
 
+If you are not using Trinket in your browser, you may need to install `pygal` before you can import it.
+
+--- collapse ---
+---
+title: Installing pygal
+---
+
+### On Windows
+In the **Command Prompt** type the following and press the enter key:
+
+```
+pip install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+### On a Mac
+In the **Terminal** type the following and press the enter key:
+
+```
+pip3 install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+### On Linux, including Raspberry Pi OS
+In the **Terminal** type the following and press the enter key:
+
+```
+pip install pygal
+```
+
+Wait for the instllation to complete and then continue with the project.
+
+--- /collapse ---
+
 ### Make a chart
 
 --- task ---
@@ -42,11 +78,9 @@ chart.title = 'Olympic medals'
 
 --- /task ---
 
-`title` is an **attribute** of your `chart`. Attributes are variables connected to an object. You can use attributes with `.`. For example, `chart.title`.
-
 --- task ---
 
-`chart` also has functions connected with it. Call `chart.render()` to display the chart.
+Call `chart.render()` to display the chart.
 
 --- code ---
 ---
@@ -81,7 +115,7 @@ Python can store related data as a **list**. You can create lists using square b
 
 --- task ---
 
-Create three lists of data to display on your chart.
+Create three lists of data to show on your chart.
 
 --- code ---
 ---
@@ -100,7 +134,7 @@ gb = ['Great Britain', 1304]
 
 --- /task ---
 
-When you store something it gets an **index**: a number that tells you the item's position in the list. List indexes start from `0`, instead of `1`.
+When you store something in a list it gets an **index**. An index is a number that tells you an item's position in a list. List indexes start from `0`, instead of `1`.
 
 --- task ---
 
