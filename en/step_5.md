@@ -34,16 +34,10 @@ To display fewer items on the chart, only `add()` a certain number of items from
 
 You can use `range()` to make a list of numbers, then you can use those numbers as list indexes. For example, you could print the first five items on a list with this code:
 
---- code ---
----
-language: python
-filename: main.py
----
-
+```python
 for i in range(5):
   print(my_list[i])
-
---- /code ---
+```
 
 --- /task ---
 
