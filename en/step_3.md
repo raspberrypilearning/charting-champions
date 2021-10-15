@@ -47,7 +47,7 @@ with open('medals.csv') as f:
 
 The text in `data` is one long string, which you need to split into the names of teams and the number of medals they have won. 
 
-Use the `splitlines()` function to split the string into a list of lines, just like the lists you made earlier. Then `print()` those lines.
+Use the `splitlines()` function to split the string into a list, just like the lists you made earlier. Each line in the string will become an item in the list. Then `print()` those items.
 
 --- code ---
 ---
@@ -109,7 +109,7 @@ The `split()` function breaks a string into pieces. `split(',')` makes a new pie
 
 --- task ---
 
-Use a `for` loop on `lines`, along with the `split()` function, to split each string into a list. Then print those lists out.
+Use a `for` loop on `lines`, along with the `split()` function, to split each string into its own list. Then print those lists out.
 
 --- code ---
 ---
