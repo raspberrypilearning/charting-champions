@@ -109,7 +109,7 @@ The `split()` function breaks a string into pieces. `split(',')` makes a new pie
 
 --- task ---
 
-Use a `for` loop on `lines`, along with the `split()` function, to split each string into a list. You will get one list item for each side of the comma in the text string. Then print those lists out.
+Use a `for` loop on `lines`, along with the `split()` function, to split each string into a list. Then print those lists out.
 
 --- code ---
 ---
