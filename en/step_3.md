@@ -105,6 +105,8 @@ with open('medals.csv') as f:
 
 The strings in the `lines` list are all made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
+The `split()` function breaks a string into pieces. `split(',')` makes a new piece every time it sees a comma. Each of these pieces becomes an item in the new list `split()` creates.
+
 --- task ---
 
 Use a `for` loop on `lines`, along with the `split()` function, to split each string into a list. You will get one list item for each side of the comma in the text string. Then print those lists out.
