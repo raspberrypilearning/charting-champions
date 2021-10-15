@@ -55,7 +55,7 @@ You can load and chart any data that's in a `.csv` file with the program you've 
 
 --- task ---
 
-Update the code that reads from `data.csv` to read from your new file. 
+Update the code that reads from `medals.csv` to read from your new file. 
 
 These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart. 
 
