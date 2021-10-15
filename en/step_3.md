@@ -19,7 +19,7 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 --- task ---
 
-The `data.csv` file included in this starter project contains the data you need. You can load the file into a variable by using `with open() as` and `read()`.
+The `medals.csv` file included in this starter project contains the data you need. You can load the file into a variable by using `with open() as` and `read()`.
 
 [[[generic-python-file-read]]]
 
@@ -32,7 +32,7 @@ line_number_start: 8
 line_highlights: 9-10
 ---
 # Add data to the chart
-with open('data.csv') as f:
+with open('medals.csv') as f:
   data = f.read()
 --- /code ---
 
@@ -47,7 +47,7 @@ with open('data.csv') as f:
 
 The text in `data` is one long string, which you need to split into the names of teams and the number of medals they have won. 
 
-Use the string's `splitlines()` function, which splits it into a list of lines. Then `print()` those lines.
+Use the `splitlines()` function to split the string into a list of lines, just like the lists you made earlier. Then `print()` those lines.
 
 --- code ---
 ---
@@ -57,7 +57,7 @@ line_numbers: true
 line_number_start: 9 
 line_highlights: 11-12
 ---
-with open('data.csv') as f:
+with open('medals.csv') as f:
   data = f.read()
   lines = data.splitlines()
   print(lines)
@@ -73,7 +73,7 @@ Notice that the list has the same square brackets (`[]`) you used to make a list
 
 ![A long list of text strings, printed out.](images/lines.png){:width="400px"}
 
-**Debug:** If the code doesn't work, make sure you have indented it under `with`, as in the example above.
+**Debug:** If the code doesn't work, make sure you have indented it under `with`, like in the example above.
 
 **Debug:** If you see a message about `read` or `splitlines` being 'not defined':
  - check that you have included `f.` before `read()` 
@@ -95,7 +95,7 @@ line_numbers: true
 line_number_start: 9 
 line_highlights: 12
 ---
-with open('data.csv') as f:
+with open('medals.csv') as f:
   data = f.read()
   lines = data.splitlines()
   #print(lines)
@@ -107,7 +107,7 @@ The strings in the `lines` list are all made up of two pieces separated by a com
 
 --- task ---
 
-Use a `for` loop on `lines`, along with each string's `split()` function, to split every string into a list. You will get one list item for each side of the comma in the text string. Then print those lists out.
+Use a `for` loop on `lines`, along with the `split()` function, to split each string into a list. You will get one list item for each side of the comma in the text string. Then print those lists out.
 
 --- code ---
 ---
@@ -117,7 +117,7 @@ line_numbers: true
 line_number_start: 9 
 line_highlights: 14-16
 ---
-with open('data.csv') as f:
+with open('medals.csv') as f:
   data = f.read()
   lines = data.splitlines()
   #print(lines)
