@@ -18,29 +18,6 @@ To create a pie chart instead of a bar chart, change the import from `pygal` to 
 
 --- /task ---
 
-### Display the first ten items
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Try showing only the first ten items on your chart, so it's easier to see and compare them.
-</div>
-<div>
-![A chart showing the carbon dioxide emissions of ten countries](images/10_co2.png){:width="300px"}
-</div>
-</div>
-
---- task ---
-
-To display fewer items on the chart, only `add()` a certain number of items from the `lines` list. 
-
-You can use `range()` to make a list of numbers, then you can use those numbers as list indexes. For example, you could print the first five items on a list with this code:
-
-```python
-for i in range(5):
-  print(my_list[i])
-```
-
---- /task ---
-
 ### Use a different set of data
 You can load and chart any data that's in a `.csv` file with the program you've written.
 
