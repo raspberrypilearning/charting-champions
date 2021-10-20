@@ -21,8 +21,6 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 --- /task ---
 
---- task ---
-
 The `medals.csv` file included in this starter project contains the data you need.
 
 --- task ---
@@ -36,7 +34,11 @@ Open `medals.csv` and look at the data in it. See how each line has a team name 
 ![A few lines of a csv file](images/csv_sample.png){:width="200px"}
 </div>
 
-You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made. You can start by loading the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
+
+--- task ---
+
+Start by loading the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
 
 [[[generic-python-file-read]]]
 
