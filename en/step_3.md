@@ -9,6 +9,10 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 </div>
 </div>
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn to have your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
+</p>
+
 --- task ---
 
 Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target="_blank"}. Trinket will open in another browser tab.
@@ -19,7 +23,20 @@ If you have a Trinket account, you can click on the **Remix button** to save a c
 
 --- task ---
 
-The `medals.csv` file included in this starter project contains the data you need. You can load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+The `medals.csv` file included in this starter project contains the data you need.
+
+--- task ---
+
+Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma. 
+
+--- /task ---
+
+<div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparated **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
+![A few lines of a csv file](images/csv_sample.png){:width="200px"}
+</div>
+
+You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made. You can start by loading the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
 
 [[[generic-python-file-read]]]
 
@@ -39,10 +56,7 @@ with open('medals.csv') as f:
 
 --- /task ---
 
-<div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparated **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-![A few lines of a csv file](images/csv_sample.png){:width="200px"}
-</div>
+The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
 
 --- task ---
 
