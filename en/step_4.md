@@ -66,10 +66,10 @@ Hover over the biggest bars and notice which countries they are. Click the names
 
 ### Wealth
 
-A file, called `gdp.csv` is part of the starter project. It has data on the GDP of different countries for a year. An area's GDP is a good measure of how rich it is. Just like with `pop.csv`, you'll only need to make small changes to use it.
+A file, called `gdp.csv` is part of the starter project. It has data on the GDP of different countries for a year. Just like with `pop.csv`, you'll only need to make small changes to use it.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**GDP**</span> is **g**ross **d**omestic **p**roduct. It measures the value, in money, of everything produced in an area over a time period.
+<span style="color: #0faeb0">**GDP**</span> is **g**ross **d**omestic **p**roduct. It measures the value, in money, of everything produced in an area over a time period. It can measure how rich an area is.
 </p>
 
 --- task ---
@@ -100,11 +100,11 @@ Now run your program and look at the chart it draws.
 
 ![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/gdp.gif){:width="300px"}
 
-Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the richest countries teams have very large numbers of medals?
+Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the richest countries' teams have very large numbers of medals?
 
 --- /task ---
 
-### What does this tell you?
+### What did you find?
 What did you discover by using your program to look at this data?
 
  - There are some signs that the number of people a team has to choose from helps it earn medals.
@@ -116,4 +116,4 @@ But this isn't a problem in a maths book. So the answer isn't simple. For exampl
  - Jamaica doesn't have a large population, or a large GDP. 
  - Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
 
-So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
+There's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
