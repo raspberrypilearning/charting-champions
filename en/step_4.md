@@ -110,10 +110,16 @@ What did you discover by using your program to look at this data?
  - There are some signs that the number of people a team has to choose from helps it earn medals.
  - But population doesn't explain how countries like France have so many medals. Or why India doesn't have as many medals as China or the USA.
  - Money seems to explain more. Most of the countries that have lots of medals list have high GDP too.
+ - Neither of them explains everything. There are teams that don't follow this pattern.
 
-### The world is complex
-But this isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica: 
+--- collapse ---
+---
+title: Jamaica does better than bigger and richer countries
+---
+This isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica: 
  - Jamaica doesn't have a large population, or a large GDP. 
  - Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
 
-There's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
+--- /collapse ---
+
+So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
