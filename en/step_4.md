@@ -33,7 +33,7 @@ So it makes sense to look at both the population and wealth of teams, to see if 
 
 ### Population sizes
 
-A file, called `pop.csv`, with data on the population of different countries is part of the starter project. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
+A file, called `pop.csv`, with data on the population of different countries, is part of the starter project. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
 
 --- task ---
 
@@ -78,6 +78,10 @@ Those facts point to population being important. But it looks like the number of
 ### Wealth
 
 A file, called `gdp.csv` is part of the starter project. It has data on the GDP of different countries for a year. An area's GDP is a good measure of how rich it is. Just like with `pop.csv`, you'll only need to make small changes to use it.
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**GDP**</span> is **g**ross **d**omestic **p**roduct. It measures the value, in money, of everything produced in an area over a time period.
+</p>
 
 --- task ---
 
@@ -124,6 +128,8 @@ What did you discover by using your program to look at this data?
 So it looks like population is important, but that money being invested in sports helps too. 
 
 ### The world is complex
-But this isn't a problem in a maths book — the answer isn't neat and simple. For example, look at Jamaica. It doesn't have a large population, or a large GDP. Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
+But this isn't a problem in a maths book — the answer isn't neat and simple. For example, look at Jamaica: 
+ - Jamaica doesn't have a large population, or a large GDP. 
+ - Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
 
-So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so? Are there other questions, about other things, you would like to use data to answer? 
+So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so? Are there other questions, about other things, you would like to use data to answer? As your skills with Python grow, you will be able to do these kinds of investigations about anything you want!
