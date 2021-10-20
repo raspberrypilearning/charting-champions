@@ -1,4 +1,4 @@
-## Chart some data
+## Make a chart
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -104,8 +104,8 @@ chart.render()
 
 **Debug**: If you see an error about `Bar()` or  `chart.render()` being `not defined`:
 
- - If the error is for `Bar()`, make sure it has an uppercase 'B' at the start, and parentheses at the end.
- - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the parentheses at the end.
+ - If the error is for `Bar()`, make sure it has an uppercase 'B' at the start, and brackets at the end.
+ - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end.
 
 --- /task ---
 
@@ -162,11 +162,52 @@ chart.add(gb[0], gb[1])
 
 --- task ---
 
-**Test:** Run your code to see the chart
+**Test:** Run your code to see the chart.
 
 ![A bar chart showing the medals won by the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `us[2]`) that doesn't exist. To fix this:
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes
+ - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+
+--- /task ---
+
+--- task ---
+
+Now load two more teams by adding new lists and `chart.add()` calls.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 8 
+line_highlights: 12-13, 18-19
+---
+# Add data to the chart
+us = ['United States', 2399]
+ru = ['Russia', 1413]
+gb = ['Great Britain', 1304]
+fr = ['France', 780]
+de = ['Germany', 671]
+
+chart.add(us[0], us[1])
+chart.add(ru[0], ru[1])
+chart.add(gb[0], gb[1])
+chart.add(fr[0], fr[1])
+chart.add(de[0], de[1])
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
+
+![A bar chart showing the medals won by the United States, Russia, Great Britain, France, and Germany. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
+
+**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `fr[2]`) that doesn't exist. To fix this:
  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 

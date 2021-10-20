@@ -7,8 +7,9 @@ copyedit: false
 last_tested: "2021-10-07"
 steps:
   - title: Introduction
-  - title: Charting some data
+  - title: Make a chart
   - title: Load data from a file
+  - title: Investigate with data
   - title: Reflection
     knowledge_quiz:
       path: quiz1
