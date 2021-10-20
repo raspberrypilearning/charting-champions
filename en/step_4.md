@@ -17,14 +17,11 @@ Look at the chart you've made. The taller a bar is, the more medals that team ha
 
 ![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="300px"}
 
+Why might they have the most medals?
+
 --- /task ---
 
-Those are teams like the United States, Russia, and Germany. Why might they have the most medals? Some of them are very large, with many millions of people living in them. Some of them are also very rich. This suggests two ideas:
-
- - Teams from places with lots of people win medals. If one in ten million people can win a medal, more people should mean more medals.
- - Teams from places with lots of money win medals. An Olympic athelete from anywhere has to be dedicated and talented. But to be those things and have the best faciilities and coaches will give them an advantge. 
-
-So it makes sense to look at both the population and wealth of teams, to see if there is any sort of pattern.
+A good idea might be to look at both the population and wealth of teams, to see if there is any sort of pattern.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Data analysis:**</span> People have done these kinds of investigations since long before computers were invented. For example: in the 1850's Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick. 
@@ -64,14 +61,6 @@ Now run your program and look at the chart it draws.
 ![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="300px"}
 
 Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the countries with lots of people have large numbers of medals?
-
- - The United States had loads of medals, and they do have a very large population. 
- - China had lots of medals too, and they have the biggest population in the world.
-
-Those facts point to population being important. But it looks like the number of people might not be the only thing that matters:
-
- - India, with the second largest population in the world, doesn't have a particularly large number of medals.
- - The teams from Great Britain, France, and Germany won lots of medals. Those places don't have huge populations.
 
 --- /task ---
 
@@ -113,23 +102,18 @@ Now run your program and look at the chart it draws.
 
 Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the richest countries teams have very large numbers of medals?
 
- - The United States and China really stand out here too. They are the richest countries in the world.
- - Many of the other teams with lots of medals are rich countries too. Germany, France, and the United Kingdom (from which team Great Britain come) all have very tall bars on this chart.
- - India has a high GDP too, around the same as the United Kingdom. But spread across a much larger country and population. This means a lot less money for sports facilities for individual Indians. 
 --- /task ---
 
 ### What does this tell you?
 What did you discover by using your program to look at this data?
 
  - There are some signs that the number of people a team has to choose from helps it earn medals.
- - Population doesn't explain how countries like France have so many medals. Or why India doesn't have as many medals as China or the USA.
+ - But population doesn't explain how countries like France have so many medals. Or why India doesn't have as many medals as China or the USA.
  - Money seems to explain more. Most of the countries that have lots of medals list have high GDP too.
 
-So it looks like population is important, but that money being invested in sports helps too. 
-
 ### The world is complex
-But this isn't a problem in a maths book — the answer isn't neat and simple. For example, look at Jamaica: 
+But this isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica: 
  - Jamaica doesn't have a large population, or a large GDP. 
  - Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
 
-So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so? Are there other questions, about other things, you would like to use data to answer? As your skills with Python grow, you will be able to do these kinds of investigations about anything you want!
+So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
