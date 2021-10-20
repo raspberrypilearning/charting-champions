@@ -116,9 +116,9 @@ What did you discover by using your program to look at this data?
 ---
 title: Jamaica does better than bigger and richer countries
 ---
-This isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica: 
- - Jamaica doesn't have a large population, or a large GDP. 
- - Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
+This isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica. Jamaica doesn't have a large population, or a large GDP. 
+ 
+ Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per-person. But Jamaica has won more medals than any of them!
 
 --- /collapse ---
 
