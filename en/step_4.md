@@ -15,7 +15,7 @@ Now your program can draw charts from files of data. You can use it on different
 
 Look at the chart you've made. The taller a bar is, the more medals that team has won. Hover over some of the tallest bars and notice which teams they're for. 
 
-![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="400px"}
+![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
 
 Why might they have the most medals?
 
