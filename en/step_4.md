@@ -15,7 +15,7 @@ Now your program can draw charts from files of data. You can use it on different
 
 Look at the chart you've made. The taller a bar is, the more medals that team has won. Hover over some of the tallest bars and notice which teams they're for. 
 
-![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="300px"}
+![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="400px"}
 
 Why might they have the most medals?
 
@@ -58,7 +58,7 @@ with open('pop.csv') as f:
 
 Now run your program and look at the chart it draws. 
 
-![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="300px"}
+![A bar chart showing the population of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="400px"}
 
 Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the countries with lots of people have large numbers of medals?
 
@@ -98,7 +98,7 @@ with open('gdp.csv') as f:
 
 Now run your program and look at the chart it draws. 
 
-![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/gdp.gif){:width="300px"}
+![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/gdp.gif){:width="400px"}
 
 Hover over the biggest bars and notice which countries they are. Click the names of the really big ones to remove them from the chart. That will let you get a closer look at the others. Did any of the richest countries' teams have very large numbers of medals?
 
