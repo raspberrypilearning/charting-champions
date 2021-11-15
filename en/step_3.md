@@ -169,6 +169,7 @@ with open('medals.csv') as f:
 **Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `pieces[2]`) that doesn't exist. To fix this:
  - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes
  - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
+ - Check you do not have a blank line at the bottom of your .csv file.
 
 --- /task ---
 
