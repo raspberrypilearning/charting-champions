@@ -14,7 +14,7 @@ language: python
 
 colours = ['red', 'green', 'blue', 'yellow', 'pink', 'brown']
 
-print(colour[2])
+print(colours[2])
 
 --- /code ---
 
