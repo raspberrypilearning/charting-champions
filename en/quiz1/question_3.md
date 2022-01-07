@@ -44,7 +44,7 @@ blue
 
   --- feedback ---
 
-  That's correct! 'blue' is the list item which was selected for printing.
+  That's correct! 'blue' is the list item that was selected for printing.
 
   --- /feedback ---
 
