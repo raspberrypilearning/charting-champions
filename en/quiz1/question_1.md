@@ -36,7 +36,7 @@ names = ['cat', 'dog', 'rabbit']
 
   --- feedback ---
 
-  That's correct! Square brackets (`[]`) and commas between the items on the list.
+  That's correct! Lists use square brackets (`[]`) and commas between the items on the list.
 
   --- /feedback ---
 
