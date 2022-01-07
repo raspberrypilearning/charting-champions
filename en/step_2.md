@@ -5,7 +5,7 @@
 Create a chart and some lists of data to display on it.
 </div>
 <div>
-![A bar chart showing the medals won by the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
 </div>
 </div>
 
@@ -29,7 +29,7 @@ title: Installing pygal
 ---
 
 ### On Windows
-In the **Command Prompt** type the following and press the enter key:
+In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
 
 ```
 pip install pygal
@@ -38,7 +38,7 @@ pip install pygal
 Wait for the instllation to complete and then continue with the project.
 
 ### On a Mac
-In the **Terminal** type the following and press the enter key:
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
 
 ```
 pip3 install pygal
@@ -47,7 +47,7 @@ pip3 install pygal
 Wait for the instllation to complete and then continue with the project.
 
 ### On Linux, including Raspberry Pi OS
-In the **Terminal** type the following and press the enter key:
+In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
 
 ```
 pip install pygal
@@ -98,13 +98,13 @@ chart.render()
 
 --- task ---
 
-**Test:** Run your code to see the chart. It will be empty, because it doesn't have data yet.
+**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
 
-![The words 'Olympic medals' on a black background](images/empty_chart.png){:width="300px"}
+![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
 
-**Debug**: If you see an error about `Bar()` or  `chart.render()` being `not defined`:
+**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
 
- - If the error is for `Bar()`, make sure it has an uppercase 'B' at the start, and brackets at the end.
+ - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end.
  - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end.
 
 --- /task ---
@@ -138,7 +138,7 @@ When you store something in a list it gets an **index**. An index is a number th
 
 --- task ---
 
-You can get an item from a list by its index. For example: `my_list[3]` will get the *fourth* item in `my_list`, because indexes start at `0`.
+You can get an item from a list by its index. For example: `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
 
 Use the indexes of your lists and `chart.add()` to display your data.
 
@@ -164,10 +164,10 @@ chart.add(gb[0], gb[1])
 
 **Test:** Run your code to see the chart.
 
-![A bar chart showing the medals won by the United States, Russia, and Great Britain](images/short_list.png){:width="300px"}
+![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `us[2]`) that doesn't exist. To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 --- /task ---
@@ -208,7 +208,7 @@ chart.add(de[0], de[1])
 ![A bar chart showing the medals won by the United States, Russia, Great Britain, France, and Germany. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `fr[2]`) that doesn't exist. To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes
+ - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
  - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
 
 --- /task ---
