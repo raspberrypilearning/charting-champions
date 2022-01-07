@@ -4,7 +4,7 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- print-only ---
 
-![The solar system project](images/solar_system_simulator.png)
+![The solar system project.](images/solar_system_simulator.png)
 
 --- /print-only ---
 
