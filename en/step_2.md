@@ -15,13 +15,17 @@ Open the [Charting champions starter project](https://trinket.io/python/61b22243
 
 If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
---- /task ---
+If you are not using Trinket in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
 
-The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
+--- collapse ---
 
-[[[pygal-library]]]
+---
+title: Offline project files
+---
 
-If you are not using Trinket in your browser, you may need to install `pygal` before you can import it.
+Download the project files, unzip them and store them on your computer. For this step you will need `starter.py`, the other files will be used later in the project.
+
+--- /collapse ---
 
 --- collapse ---
 ---
@@ -53,9 +57,26 @@ In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
 pip install pygal
 ```
 
-Wait for the instllation to complete and then continue with the project.
+Wait for the installation to complete and then continue with the project.
 
 --- /collapse ---
+
+--- /task ---
+
+The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 1
+---
+
+from pygal import bar
+
+--- /code ---
 
 ### Make a chart
 
@@ -107,6 +128,8 @@ chart.render()
  - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end.
  - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end.
 
+**Debug**: If you are not using Trinket, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+
 --- /task ---
 
 ### Add some data
@@ -116,6 +139,8 @@ Python can store related data as a **list**. You can create lists using square b
 --- task ---
 
 Create three lists of data to show on your chart.
+
+Each list will store a nation's name and the number of medals won by that nation. 
 
 --- code ---
 ---
@@ -140,7 +165,7 @@ When you store something in a list it gets an **index**. An index is a number th
 
 You can get an item from a list by its index. For example: `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
 
-Use the indexes of your lists and `chart.add()` to display your data.
+Use the indexes of your lists and `chart.add()` to display your data. The nation's name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
 
 --- code ---
 ---

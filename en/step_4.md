@@ -34,7 +34,7 @@ A file, called `pop.csv`, with data on the population of different countries, is
 
 --- task ---
 
-Change the chart title and the file you are opeing to draw a chart based on the population data in `pop.csv`.
+Change the chart title, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
 
 --- code ---
 ---
@@ -42,14 +42,19 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 6 
-line_highlights: 6, 9
+line_highlights: 6, 9, 15, 16
 ---
 chart.title = 'Population'
 
 # Add data to the chart
 with open('pop.csv') as f:
   for line in f:
-    print(line)
+    #print(line)
+    pieces = line.split(',')
+    #print(pieces)
+    team = pieces[0]
+    population = pieces[1]
+    chart.add(team, int(population))  # Make population a number
 --- /code ---
 
 --- /task ---
@@ -74,7 +79,9 @@ A file called `gdp.csv` is part of the starter project. It has data on the GDP o
 
 --- task ---
 
-Change the chart title and the file you are opening to draw a chart based on the population data in `gdp.csv`.
+Change the chart title, the file you are opening, and the category name to draw a chart based on the population data in `gdp.csv`.
+
+The `gdp.csv` file stores the gdp as decimal numbers. Update the type from `int` to `float` so that the numbers are in the correct format. 
 
 --- code ---
 ---
@@ -82,14 +89,19 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 6 
-line_highlights: 6, 9
+line_highlights: 6, 9, 15, 16
 ---
 chart.title = 'GDP'
 
 # Add data to the chart
 with open('gdp.csv') as f:
   for line in f:
-    print(line)
+    #print(line)
+    pieces = line.split(',')
+    #print(pieces)
+    team = pieces[0]
+    gdp = pieces[1]
+    chart.add(team, float(gdp))  # Make gdp a number
 --- /code ---
 
 --- /task ---

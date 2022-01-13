@@ -16,7 +16,7 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to load the chart. Notice that the chart is interactive. Try clicking the names of different nations to see them disappear and reappear in the chart.
+Run the program to load the chart. Notice that the chart is interactive. What happens when you click on top three nations in the key on the left?
 </div>
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/1f312ddc4c?outputOnly=true&runOption=run" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
