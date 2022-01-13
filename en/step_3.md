@@ -30,8 +30,8 @@ Open `medals.csv` and look at the data in it. See how each line has a team name 
 --- /task ---
 
 <div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are **c**omma-**s**eparated **v**alues files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-![A few lines of a csv file](images/csv_sample.png){:width="200px"}
+<span style="color: #0faeb0">**CSV files**</span> are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
+![A few lines of a csv file.](images/csv_sample.png){:width="200px"}
 </div>
 
 You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
@@ -68,7 +68,7 @@ Notice that each line has two values, separated by commas.
 
 ![A list of text strings, printed out over many lines.](images/lines.png)
 
-**Debug:** If the code doesn't work, make sure you have indented it under `with`, like in the example above.
+**Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
 
 --- /task ---
 
@@ -95,7 +95,7 @@ with open('medals.csv') as f:
 
 Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
-The `split()` function breaks a string into a list, just like the lists you made earlier. `split(',')` makes a new list item every time it sees a comma.
+The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
 
 --- task ---
 
@@ -112,7 +112,7 @@ line_highlights: 12-13
 with open('medals.csv') as f:
   for line in f:
     #print(line)
-    pieces = line.split(',') # Break string into list
+    pieces = line.split(',') # Breaks the string into a list
     print(pieces) # Print each list
 --- /code ---
 
@@ -167,7 +167,7 @@ with open('medals.csv') as f:
 **Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
 
 **Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `pieces[2]`) that doesn't exist. To fix this:
- - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes
+ - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
  - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
  - Check you do not have a blank line at the bottom of your .csv file.
 
@@ -179,4 +179,4 @@ with open('medals.csv') as f:
 
 You can see the details of how your code loads data to the chart below:
 
-![A diagram showing how each line of code changes the variables in the program](images/new_code_flow.png)
+![A diagram showing how each line of code changes the variables in the program.](images/new_code_flow.png)

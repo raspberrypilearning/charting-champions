@@ -26,5 +26,5 @@ Run the program to load the chart. Notice that the chart is interactive. Try cli
 --- /no-print ---
 
 --- print-only ---
-![Completed project](images/completed_preview.png)
+![Completed project.](images/completed_preview.png)
 --- /print-only ---
