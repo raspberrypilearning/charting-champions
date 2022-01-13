@@ -19,13 +19,25 @@ Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target=
 
 If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
+--- collapse ---
+
+---
+title: Working offline
+---
+
+You will need `starter2.py` and the `.csv` files for this step.
+
+--- /collapse ---
+
 --- /task ---
 
-The `medals.csv` file included in this starter project contains the data you need.
+There are several `.csv` files included in this starter project that contain the data you need for your charts.
 
 --- task ---
 
 Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma. 
+
+![The Trinket editor with medals tab highlighted.](images/medals-tab.png)
 
 --- /task ---
 
@@ -38,7 +50,9 @@ You'll need to turn each line of `medals.csv` into a text string and a number in
 
 --- task ---
 
-Start by loading the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+
+The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
 
 [[[generic-python-file-read]]]
 
@@ -58,8 +72,6 @@ with open('medals.csv') as f:
 
 --- /task ---
 
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
-
 --- task ---
 
 **Test:** Run your code and look at the text it prints out. 
@@ -72,34 +84,15 @@ Notice that each line has two values, separated by commas.
 
 --- /task ---
 
-It's useful to print `line` out to check your program is working properly. But you don't need to do it every time the program runs.
-
---- task ---
-
-Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it.
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 9 
-line_highlights: 11
----
-with open('medals.csv') as f:
-  for line in f:
-    #print(line)
---- /code ---
-
---- /task ---
-
 Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
 
 The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
 
 --- task ---
 
-Use the `split()` function to split each string into its own list. Then print those lists out.
+Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it. 
+
+Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
 
 --- code ---
 ---
@@ -134,7 +127,7 @@ with open('medals.csv') as f:
 
 --- task ---
 
-Load your data into the chart as part of the your `for` loop.
+Load your data into the chart as part of the your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **type cast** a string to a number.
 
 --- code ---
 ---
@@ -174,9 +167,3 @@ with open('medals.csv') as f:
 --- /task ---
 
 --- save ---
-
-### How does this code work?
-
-You can see the details of how your code loads data to the chart below:
-
-![A diagram showing how each line of code changes the variables in the program.](images/new_code_flow.png)
