@@ -71,7 +71,7 @@ Hover the mouse over the biggest bars and notice which countries they belong to.
 
 ### Wealth
 
-A file called `gdp.csv` is part of the starter project. It has data on the GDP of different countries for a year. Just like with `pop.csv`, you'll only need to make small changes to use it.
+A file called `gdp.csv` is part of the starter project. It has data on the annual GDP of different countries. Just like with `pop.csv`, you'll only need to make small changes to use it.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**GDP**</span> is the Gross Domestic Product. It measures the value, in money, of everything produced in an area over a given time period. It can measure how rich an area is.
@@ -79,9 +79,9 @@ A file called `gdp.csv` is part of the starter project. It has data on the GDP o
 
 --- task ---
 
-Change the chart title, the file you are opening, and the category name to draw a chart based on the population data in `gdp.csv`.
+Change the chart title, the file you are opening, and the category name to draw a chart based on the GDP data in `gdp.csv`.
 
-The `gdp.csv` file stores the gdp as decimal numbers. Update the type from `int` to `float` so that the numbers are in the correct format. 
+The `gdp.csv` file stores the GDP as decimal numbers. Update the type from `int` to `float` so that the numbers are in the correct format. 
 
 --- code ---
 ---
@@ -101,7 +101,7 @@ with open('gdp.csv') as f:
     #print(pieces)
     team = pieces[0]
     gdp = pieces[1]
-    chart.add(team, float(gdp))  # Make gdp a number
+    chart.add(team, float(gdp))  # Make GDP a number
 --- /code ---
 
 --- /task ---
