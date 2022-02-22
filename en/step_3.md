@@ -10,7 +10,7 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn to have your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
+<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
 </p>
 
 --- task ---
@@ -127,7 +127,7 @@ with open('medals.csv') as f:
 
 --- task ---
 
-Load your data into the chart as part of the your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **type cast** a string to a number.
+Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
 
 --- code ---
 ---
@@ -159,7 +159,7 @@ with open('medals.csv') as f:
 
 **Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
 
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index (e.g. `pieces[2]`) that doesn't exist. To fix this:
+**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
  - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
  - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
  - Check you do not have a blank line at the bottom of your .csv file.
