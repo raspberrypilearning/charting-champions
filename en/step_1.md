@@ -1,4 +1,4 @@
-## Introduction
+## You will make
 
 Discover the power of lists in Python by creating an interactive chart of Olympic medals.
 
@@ -13,7 +13,7 @@ You will:
 
 --- no-print ---
 --- task ---
-### Try it
+### Play ▶️
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?

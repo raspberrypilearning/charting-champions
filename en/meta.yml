@@ -1,28 +1,29 @@
 ---
 title: Charting champions
 hero_image: images/banner.png
-description: Discover the power of lists in Python by creating an interactive chart
+description:
+  Discover the power of lists in Python by creating an interactive chart
   of Olympic medals
 version: 4
-listed: false
-copyedit: false
-last_tested: '2021-10-07'
+listed: true
+copyedit: true
+last_tested: "2021-10-07"
 steps:
-- title: Introduction
-- title: Make a chart
-- title: Load data from a file
-  completion:
-  - engaged
-- title: Investigate with data
-  completion:
-  - internal
-- title: Reflection
-  knowledge_quiz:
-    path: quiz1
-    version: 1
-    questions: 3
-    passing_score: 3
-  completion:
-  - external
-- title: Upgrade your project
-- title: What next?
+  - title: You will make
+  - title: Make a chart
+  - title: Load data from a file
+    completion:
+      - engaged
+  - title: Investigate with data
+    completion:
+      - internal
+  - title: Quick quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Upgrade your project
+  - title: What next?
