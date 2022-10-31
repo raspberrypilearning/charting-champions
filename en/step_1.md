@@ -28,3 +28,5 @@ Run the program to load the chart. Notice that the chart is interactive. What ha
 --- print-only ---
 ![Completed project.](images/completed_preview.png)
 --- /print-only ---
+
+![](http://code.org/api/hour/begin_rp_charting.png)
