@@ -1,4 +1,4 @@
-## What next?
+## Rhannu
 
 If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Solar system](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In that project, you will make a model of the solar system to teach people about the planets.
 
@@ -14,4 +14,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Os hoffech chi gael mwy o hwyl yn archwilio Python, gallech chi roi cynnig ar unrhyw rai o'r [prosiectau hyn](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
