@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Cwestiwn 3 o 3
 ---
 
 You have a program with this code:
@@ -39,18 +39,18 @@ brown
 
 - (x)
 ```
-blue
+glas
 ```
 
   --- feedback ---
 
-  That's correct! 'blue' is the list item that was selected for printing.
+  Cywir! 'blue' is the list item that was selected for printing.
 
   --- /feedback ---
 
 - ( )
 ```
-green
+gwyrdd
 ```
 
   --- feedback ---
@@ -67,7 +67,7 @@ blue
 
   --- feedback ---
 
-  Not quite. The `2` in the square brackets is the index of the item to be printed, not the number of times to print it.
+  Ddim cweit. The `2` in the square brackets is the index of the item to be printed, not the number of times to print it.
 
   --- /feedback ---
 
