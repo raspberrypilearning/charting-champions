@@ -1,4 +1,4 @@
-## You will make
+## Byddi di'n creu
 
 Discover the power of lists in Python by creating an interactive chart of Olympic medals.
 
@@ -6,13 +6,13 @@ Discover the power of lists in Python by creating an interactive chart of Olympi
 <span style="color: #0faeb0">**The Olympic Games**</span> began in 1896: thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
 </p>
 
-You will:
+Yn Scratch, gelwir cymeriadau a gwrthrychau yn **gorluniau**, ac maen nhw'n ymddangos ar y **Llwyfan**.
  - Use **lists** to store related data
  - Create a **chart** using the `pygal` library
  - Load data by having your program **read a file**
 
 --- no-print --- --- task ---
-### Play ▶️
+### Chwarae ▶️
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
