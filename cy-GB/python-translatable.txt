@@ -8,9 +8,9 @@ Russia
 
 Great Britain
 
-France
+Ffrainc
 
-Germany
+Almaen
 
 line
 
@@ -36,13 +36,13 @@ colours
 
 red
 
-green
+gwyrdd
 
-blue
+glas
 
 yellow
 
-pink
+pinc
 
 brown
 
