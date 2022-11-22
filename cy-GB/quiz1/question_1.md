@@ -1,15 +1,15 @@
-## Quick quiz
+## Cwis cyflym
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Ateba'r tri chwestiwn. Mae awgrymiadau ar gael i’ch arwain at yr ateb cywir.
 
-When you have answered each question, click on **Check my answer**.
+Ar ôl i chi ateb pob cwestiwn, cliciwch ar **Gwirio fy ateb**.
 
-Have fun!
+Mwynha!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Cwestiwn 1 o 3
 ---
 
 You created and used a lot of lists in your project. Which of these is the proper way to create a list of animal names?
@@ -23,7 +23,7 @@ names = ('cat', 'dog', 'rabbit')
 
   --- feedback ---
 
-  Close! But lists don't use parentheses — `()`.
+  Agos! But lists don't use parentheses — `()`.
 
   --- /feedback ---
 
@@ -34,7 +34,7 @@ names = ['cat', 'dog', 'rabbit']
 
   --- feedback ---
 
-  That's correct! Lists use square brackets (`[]`) and commas between the items on the list.
+  Cywir! Lists use square brackets (`[]`) and commas between the items on the list.
 
   --- /feedback ---
 
