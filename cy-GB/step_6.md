@@ -1,4 +1,4 @@
-## Upgrade your project
+## Myfyrio
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -42,7 +42,7 @@ The carbon dioxide data uses numbers with decimals. To convert them from text st
 
 --- collapse ---
 ---
-title: Completed project
+teitl: Prosiect gorffenedig
 ---
 
 You can view the [completed project here](https://trinket.io/python/1f312ddc4c).
