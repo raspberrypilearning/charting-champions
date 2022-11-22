@@ -15,14 +15,14 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 
 --- task ---
 
-Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target="_blank"}. Trinket will open in another browser tab.
+Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target="_blank"}. Bydd Trinket yn agor mewn tab arall yn y porwr.
 
 If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
 
 --- collapse ---
 
 ---
-title: Working offline
+title: Mae corlun yn ymddangos neu'n cuddio ar y tudalennau anghywir
 ---
 
 You will need `starter2.py` and the `.csv` files for this step.
