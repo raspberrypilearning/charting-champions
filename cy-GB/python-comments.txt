@@ -1,0 +1,15 @@
+Create a chart
+
+Display the chart
+
+Add data to the chart
+
+Breaks the string into a list
+
+Print each list
+
+Make medals a number
+
+Make population a number
+
+Make GDP a number
