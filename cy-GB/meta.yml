@@ -8,7 +8,7 @@ copyedit: true
 last_tested: "2021-10-07"
 steps:
   - 
-    title: You will make
+    title: Byddi di'n creu
   - 
     title: Make a chart
   - 
@@ -20,7 +20,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Effeithiau llwyfan
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -29,6 +29,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Myfyrio
   - 
-    title: What next?
+    title: Beth nesaf?
