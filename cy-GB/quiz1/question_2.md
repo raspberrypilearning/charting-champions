@@ -2,7 +2,7 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Cwestiwn 2 o 3
 ---
 
 Your project used data loaded from a file to let you chart hundreds of pieces of information. Which of these pieces of code would correctly load `data.csv` into a variable as a text string?
@@ -16,7 +16,7 @@ with open('data.csv') as f:
 ```
   --- feedback ---
 
-  That's correct! This will load `data.csv` as `f` and then `read()` it into `info` as a text string.
+  Cywir! This will load `data.csv` as `f` and then `read()` it into `info` as a text string.
 
   --- /feedback ---
 
