@@ -18,8 +18,9 @@ You will:
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
 </div>
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/1f312ddc4c?outputOnly=true&runOption=run" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<div>
+    <iframe src="https://editor.raspberrypi.org/en/embed/viewer/charting-champions-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+    </iframe>
 </div>
 </div>
 --- /task ---
