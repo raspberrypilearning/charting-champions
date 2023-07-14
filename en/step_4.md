@@ -48,13 +48,13 @@ chart.title = 'Population'
 
 # Add data to the chart
 with open('pop.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',')
-    #print(pieces)
-    team = pieces[0]
-    population = pieces[1]
-    chart.add(team, int(population))  # Make population a number
+    for line in f:
+        #print(line)
+        pieces = line.split(',')
+        #print(pieces)
+        team = pieces[0]
+        population = pieces[1]
+        chart.add(team, int(population))  # Make population a number
 --- /code ---
 
 --- /task ---
@@ -95,13 +95,13 @@ chart.title = 'GDP'
 
 # Add data to the chart
 with open('gdp.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',')
-    #print(pieces)
-    team = pieces[0]
-    gdp = pieces[1]
-    chart.add(team, float(gdp))  # Make GDP a number
+    for line in f:
+        #print(line)
+        pieces = line.split(',')
+        #print(pieces)
+        team = pieces[0]
+        gdp = pieces[1]
+        chart.add(team, float(gdp))  # Make GDP a number
 --- /code ---
 
 --- /task ---

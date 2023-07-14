@@ -66,8 +66,8 @@ line_highlights: 9-11
 ---
 # Add data to the chart
 with open('medals.csv') as f:
-  for line in f:
-    print(line)
+    for line in f:
+        print(line)
 --- /code ---
 
 --- /task ---
@@ -103,10 +103,10 @@ line_number_start: 9
 line_highlights: 12-13
 ---
 with open('medals.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',') # Breaks the string into a list
-    print(pieces) # Print each list
+    for line in f:
+        #print(line)
+        pieces = line.split(',') # Breaks the string into a list
+        print(pieces) # Print each list
 --- /code ---
 
 **Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
@@ -138,13 +138,13 @@ line_number_start: 9
 line_highlights: 14-16
 ---
 with open('medals.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',')
-    #print(pieces)
-    team = pieces[0]
-    medals = pieces[1]
-    chart.add(team, int(medals))  # Make medals a number
+    for line in f:
+        #print(line)
+        pieces = line.split(',')
+        #print(pieces)
+        team = pieces[0]
+        medals = pieces[1]
+        chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
 **Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
