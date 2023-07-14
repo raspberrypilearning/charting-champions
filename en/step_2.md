@@ -82,7 +82,7 @@ from pygal import bar
 
 --- task ---
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`. Then give your chart a title.
+Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
 
 --- code ---
 ---
@@ -90,11 +90,11 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 4 
-line_highlights: 5-6
+line_highlights: 5
 ---
 # Create a chart
-chart = Bar()
-chart.title = 'Olympic medals'
+chart = Bar(title='Olympic medals')
+
 --- /code ---
 
 --- /task ---
@@ -147,8 +147,8 @@ Each list will store a nation's name and the number of medals won by that nation
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8 
-line_highlights: 9-11
+line_number_start: 7 
+line_highlights: 8-10
 ---
 # Add data to the chart
 us = ['United States', 2399]
@@ -172,8 +172,8 @@ Use the indexes of your lists and `chart.add()` to display your data. The nation
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 11 
-line_highlights: 13-15
+line_number_start: 10 
+line_highlights: 12-14
 ---
 gb = ['Great Britain', 1304]
 
@@ -206,8 +206,8 @@ Now load two more teams by adding new lists and `chart.add()` calls.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8 
-line_highlights: 12-13, 18-19
+line_number_start: 7 
+line_highlights: 11-12, 17-18
 ---
 # Add data to the chart
 us = ['United States', 2399]
