@@ -15,9 +15,9 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 
 --- task ---
 
-Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target="_blank"}. Trinket will open in another browser tab.
+Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Rapsberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
 
 --- collapse ---
 
@@ -37,7 +37,7 @@ There are several `.csv` files included in this starter project that contain the
 
 Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma. 
 
-![The Trinket editor with medals tab highlighted.](images/medals-tab.png)
+![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
 
 --- /task ---
 
@@ -66,8 +66,8 @@ line_highlights: 9-11
 ---
 # Add data to the chart
 with open('medals.csv') as f:
-  for line in f:
-    print(line)
+    for line in f:
+        print(line)
 --- /code ---
 
 --- /task ---
@@ -103,10 +103,10 @@ line_number_start: 9
 line_highlights: 12-13
 ---
 with open('medals.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',') # Breaks the string into a list
-    print(pieces) # Print each list
+    for line in f:
+        #print(line)
+        pieces = line.split(',') # Breaks the string into a list
+        print(pieces) # Print each list
 --- /code ---
 
 **Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
@@ -138,13 +138,13 @@ line_number_start: 9
 line_highlights: 14-16
 ---
 with open('medals.csv') as f:
-  for line in f:
-    #print(line)
-    pieces = line.split(',')
-    #print(pieces)
-    team = pieces[0]
-    medals = pieces[1]
-    chart.add(team, int(medals))  # Make medals a number
+    for line in f:
+        #print(line)
+        pieces = line.split(',')
+        #print(pieces)
+        team = pieces[0]
+        medals = pieces[1]
+        chart.add(team, int(medals))  # Make medals a number
 --- /code ---
 
 **Tip:** You can now use `#` to turn `print(pieces)` into a comment too.

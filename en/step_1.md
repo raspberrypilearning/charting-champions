@@ -1,3 +1,7 @@
+<div class="c-survey-banner" style="width:100%">
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+</div>
+
 ## You will make
 
 Discover the power of lists in Python by creating an interactive chart of Olympic medals.
@@ -18,9 +22,8 @@ You will:
 <div style="flex-basis: 175px; flex-grow: 1">  
 Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
 </div>
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/1f312ddc4c?outputOnly=true&runOption=run" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/charting-champions-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 </div>
 --- /task ---
 --- /no-print ---
