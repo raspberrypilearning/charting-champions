@@ -45,7 +45,7 @@ The carbon dioxide data uses numbers with decimals. To convert them from text st
 title: Completed project
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/charting-champions-example).
+You can view the [completed project here](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"}.
 
 --- /collapse ---
 
