@@ -34,14 +34,14 @@ A file, called `pop.csv`, with data on the populations of different countries, i
 
 --- task ---
 
-Change the chart title, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
+Change the chart title, the `width` of the chart, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: true line_number_start: 6
 line_highlights: 6, 9, 15, 16
 ---
-chart.title = 'Population'
+chart = Bar(title='Population', width='600')
 
 # Add data to the chart
 with open('pop.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] population = pieces[1] chart.add(team, int(population))  # Make population a number --- /code ---
