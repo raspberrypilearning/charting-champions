@@ -11,11 +11,11 @@ Create a chart and some lists of data to display on it.
 
 --- task ---
 
-Open the [Charting champions starter project](https://trinket.io/python/61b2224327){:target="_blank"}. Bydd Trinket yn agor mewn tab arall yn y porwr.
+Open the [Charting champions starter project](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
 
-If you are not using Trinket in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
 
 --- collapse ---
 
@@ -79,15 +79,17 @@ from pygal import bar
 
 --- task ---
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`. Then give your chart a title.
+Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: true line_number_start: 4
-line_highlights: 5-6
+line_highlights: 5
 ---
 # Create a chart
-chart = Bar() chart.title = 'Olympic medals' --- /code ---
+chart = Bar(title='Olympic medals')
+
+--- /code ---
 
 --- /task ---
 
@@ -116,7 +118,7 @@ chart.render() --- /code ---
  - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
  - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
 
-**Debug**: If you are not using Trinket, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
 
 --- /task ---
 
@@ -132,8 +134,8 @@ Each list will store a nation's name and the number of medals won by that nation
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 8
-line_highlights: 9-11
+language: python filename: main.py line_numbers: true line_number_start: 7
+line_highlights: 8-10
 ---
 # Add data to the chart
 us = ['United States', 2399] ru = ['Russia', 1413] gb = ['Great Britain', 1304]
@@ -152,8 +154,8 @@ Use the indexes of your lists and `chart.add()` to display your data. The nation
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 11
-line_highlights: 13-15
+language: python filename: main.py line_numbers: true line_number_start: 10
+line_highlights: 12-14
 ---
 gb = ['Great Britain', 1304]
 
@@ -181,8 +183,8 @@ Now load two more teams by adding new lists and `chart.add()` calls.
 
 --- code ---
 ---
-language: python filename: main.py line_numbers: true line_number_start: 8
-line_highlights: 12-13, 18-19
+language: python filename: main.py line_numbers: true line_number_start: 7
+line_highlights: 11-12, 17-18
 ---
 # Add data to the chart
 us = ['United States', 2399] ru = ['Russia', 1413] gb = ['Great Britain', 1304] fr = ['France', 780] de = ['Germany', 671]
