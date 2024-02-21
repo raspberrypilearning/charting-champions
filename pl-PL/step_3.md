@@ -15,9 +15,9 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 
 --- task ---
 
-Open the [second starter project](https://trinket.io/python/b8e0125fe2){:target="_blank"}. Trinket will open in another browser tab.
+Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Rapsberry Pi code editor will open in another browser tab.
 
-If you have a Trinket account, you can click on the **Remix button** to save a copy to your `My Trinkets` library.
+If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
 
 --- collapse ---
 
@@ -37,7 +37,7 @@ There are several `.csv` files included in this starter project that contain the
 
 Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
 
-![The Trinket editor with medals tab highlighted.](images/medals-tab.png)
+![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
 
 --- /task ---
 
