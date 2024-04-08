@@ -5,7 +5,7 @@
 Create a chart and some lists of data to display on it.
 </div>
 <div>
-![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
+![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
 </div>
 </div>
 
@@ -138,7 +138,7 @@ language: python filename: main.py line_numbers: true line_number_start: 7
 line_highlights: 8-10
 ---
 # Add data to the chart
-us = ['United States', 2399] ru = ['Russia', 1413] gb = ['Great Britain', 1304]
+us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751]
 
 --- /code ---
 
@@ -159,7 +159,7 @@ line_highlights: 12-14
 ---
 gb = ['Great Britain', 1304]
 
-chart.add(us[0], us[1]) chart.add(ru[0], ru[1]) chart.add(gb[0], gb[1])
+chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1])
 
 --- /code ---
 
@@ -187,9 +187,9 @@ language: python filename: main.py line_numbers: true line_number_start: 7
 line_highlights: 11-12, 17-18
 ---
 # Add data to the chart
-us = ['United States', 2399] ru = ['Russia', 1413] gb = ['Great Britain', 1304] fr = ['France', 780] de = ['Germany', 671]
+us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751] ge = ['Germany', 655] ch = ['China', 636]
 
-chart.add(us[0], us[1]) chart.add(ru[0], ru[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.add(de[0], de[1])
+chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.add(ge[0], ge[1]) chart.add(ch[0], ch[1])
 
 --- /code ---
 
@@ -199,7 +199,7 @@ chart.add(us[0], us[1]) chart.add(ru[0], ru[1]) chart.add(gb[0], gb[1]) chart.ad
 
 **Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
 
-![A bar chart showing the medals won by the United States, Russia, Great Britain, France, and Germany. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
+![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
 
 **Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
  - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
