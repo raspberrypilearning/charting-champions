@@ -26,4 +26,6 @@ Population
 
 Make population a number
 
+GDP
+
 Make GDP a number
