@@ -1,6 +1,18 @@
 Create a chart
 
+Olympic medals
+
 Display the chart
+
+United States
+
+Great Britain
+
+France
+
+Germany
+
+China
 
 Add data to the chart
 
@@ -9,6 +21,8 @@ Breaks the string into a list
 Print each list
 
 Make medals a number
+
+Population
 
 Make population a number
 
