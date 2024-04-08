@@ -1,16 +1,4 @@
-chart 
-
-Olympic medals
-
-United States
-
-Russia
-
-Great Britain
-
-France
-
-Germany
+chart
 
 line
 
@@ -21,6 +9,8 @@ team
 medals
 
 population
+
+gdp
 
 names
 
@@ -45,5 +35,3 @@ yellow
 pink
 
 brown
-
-tally
