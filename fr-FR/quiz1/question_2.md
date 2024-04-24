@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-Your project used data loaded from a file to let you chart hundreds of pieces of information. Which of these pieces of code would correctly load `data.csv` into a variable as a text string?
+Ton projet a utilisé des données chargées à partir d'un fichier pour te permettre de présenter des centaines d'informations sous forme de graphique. Lequel de ces morceaux de code chargerait correctement `data.csv` dans une variable sous forme de chaîne de texte ?
 
 --- choices ---
 
@@ -16,7 +16,7 @@ with open('data.csv') as f:
 ```
   --- feedback ---
 
-  That's correct! This will load `data.csv` as `f` and then `read()` it into `info` as a text string.
+  C'est correct ! Cela chargera `data.csv` comme `f` puis le lira, `read()`, dans `info` sous forme de chaîne de texte.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ open('data.csv') as f:
 
   --- feedback ---
 
-  Not quite, this is very close, but it's missing something important at the start.
+  Pas tout à fait, tu n'es pas loin, mais il manque quelque chose d'important au début.
 
   --- /feedback ---
 
@@ -40,7 +40,7 @@ info = f.read()
 
   --- feedback ---
 
-  Very close! This is all the correct code, but the indentation is wrong.
+  C'est presque ça ! C'est le bon code, mais l'indentation est incorrecte.
 
   --- /feedback ---
 
@@ -52,7 +52,7 @@ with open('data.csv') as f:
 
   --- feedback ---
 
-  Not exactly — the `read()` function belongs to the file stored in `f`, so you have to call it with `.` instead of by passing `f` to it.
+  Pas exactement — la fonction `read()` appartient au fichier stocké dans `f`, tu dois donc l'appeler avec `.` au lieu de lui transmettre `f` .
 
   --- /feedback ---
 
