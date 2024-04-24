@@ -1,18 +1,18 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
 
-When you have answered each question, click on **Check my answer**.
+Klik na het beantwoorden van elke vraag op **Controleer mijn antwoord**.
 
-Have fun!
+Veel plezier!
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
 
-You created and used a lot of lists in your project. Which of these is the proper way to create a list of animal names?
+Je hebt veel lijsten gemaakt en gebruikt in je project. Welke van deze is de juiste manier om een lijst met dierennamen te maken?
 
 --- choices ---
 
@@ -23,7 +23,7 @@ names = ('cat', 'dog', 'rabbit')
 
   --- feedback ---
 
-  Close! But lists don't use parentheses — `()`.
+  Bijna! Maar lijsten gebruiken geen haakjes — `()`.
 
   --- /feedback ---
 
@@ -34,7 +34,7 @@ names = ['cat', 'dog', 'rabbit']
 
   --- feedback ---
 
-  That's correct! Lists use square brackets (`[]`) and commas between the items on the list.
+  Dat is correct! In lijsten wordt gebruik gemaakt van vierkante haken (`[]`) en komma's tussen de items in de lijst.
 
   --- /feedback ---
 
@@ -45,7 +45,7 @@ names = ['cat' 'dog' 'rabbit']
 
   --- feedback ---
 
-  Not quite, list items are separated by more than spaces.
+  Niet helemaal, lijstitems worden gescheiden door meer dan alleen een spatie.
 
   --- /feedback ---
 
@@ -56,7 +56,7 @@ names = ['cat': 'dog': 'rabbit']
 
   --- feedback ---
 
-  Very close, but lists aren't separated by colons (`:`).
+  Heel dichtbij, maar lijsten worden niet gescheiden door dubbele punten (`:`).
 
   --- /feedback ---
 
