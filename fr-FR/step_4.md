@@ -1,40 +1,40 @@
-## Investigate with data
+## Examiner les données
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now your program can draw charts from files of data. You can use it on different files to compare their charts to see what you can learn.
+Ton programme peut désormais dessiner des graphiques à partir de fichiers de données. Tu peux l'utiliser sur différents fichiers pour comparer leurs graphiques et voir ce qu'ils peuvent t'apprendre.
 </div>
 <div>
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
+![Un graphique à barres montrant la population de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent si on clique sur les noms des nations.](images/adjust_chart.gif){:width="300px"}
 </div>
 </div>
 
-### Who has the most medals?
+### Qui a le plus de médailles ?
 
 --- task ---
 
-Look at the chart you've made. The taller a bar is, the more medals that team has won. Hover the mouse over some of the tallest bars and notice which teams they belong to.
+Regarde le graphique que tu as créé. Plus une barre est haute, plus cette équipe a remporté de médailles. Survole certaines des barres les plus hautes avec la souris et remarque à quelles équipes elles appartiennent.
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="500px"}
+![Un graphique à barres montrant la population de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent à mesure que l'on clique sur les noms des nations.](images/adjust_chart.gif){:width="500px"}
 
-Why might they have the most medals?
+Pourquoi ont-elles le plus de médailles ?
 
 --- /task ---
 
-A good idea might be to look at both the population and wealth of teams, to see if there is any sort of pattern.
+Une bonne idée pourrait être d’examiner à la fois la population et la richesse des équipes, pour voir s’il existe une tendance.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Data analysis:**</span> People have done these kinds of investigations since long before computers were invented. For example, in the 1850s, Florence Nightingale, a nurse, used charts and graphs to show the importance of disease prevention in caring for the sick. 
-![Florence Nightingale's chart of causes of mortality.](images/nightingale.jpeg){:width="300px"}
+<span style="color: #0faeb0">**Analyse des données :**</span> les gens ont mené ce genre d'enquête bien avant l'invention des ordinateurs. Par exemple, dans les années 1850, l'infirmière Florence Nightingale utilisait des tableaux et des graphiques pour montrer l’importance de la prévention dans les soins aux malades. 
+![Tableau des causes de mortalité de Florence Nightingale.](images/nightingale.jpeg){:width="300px"}
 </p>
 
-### Population sizes
+### Tailles de la population
 
-A file, called `pop.csv`, with data on the populations of different countries, is part of the starter project. Because the data in `pop.csv` is also made up of a text string and a number, you can re-use your code with only small changes.
+Un fichier, appelé `pop.csv`, contenant des données sur les populations de différents pays, fait partie du projet de démarrage. Étant donné que les données de `pop.csv` sont également constituées d'une chaîne de texte et d'un nombre, tu peux réutiliser ton code avec seulement de petites modifications.
 
 --- task ---
 
-Change the chart title, the `width` of the chart, the file you are opening, and the category name to draw a chart based on the population data in `pop.csv`.
+Modifie le titre du graphique, la `largeur` du graphique, le fichier à ouvrir et le nom de la catégorie pour dessiner un graphique basé sur les données de population de `pop.csv`.
 
 --- code ---
 ---
@@ -50,27 +50,27 @@ with open('pop.csv') as f: for line in f: #print(line) pieces = line.split(',') 
 
 --- task ---
 
-Now run your program and look at the chart it draws.
+Maintenant, exécute ton programme et regarde le graphique qu'il dessine.
 
-![A bar chart showing the populations of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/pop.gif){:width="500px"}
+![Un graphique à barres montrant la population de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent à mesure que l'on clique sur les noms des nations.](images/pop.gif){:width="500px"}
 
-Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you get a closer look at the others. Do any of the countries with lots of people have a large number of medals?
+Survole les barres les plus hautes avec la souris et remarque à quels pays elles appartiennent. Clique sur les noms des très grandes pour les supprimer du graphique ; cela te permettra d'examiner les autres de plus près. Y a-t-il des pays très peuplés qui ont un grand nombre de médailles ?
 
 --- /task ---
 
-### Wealth
+### Richesse
 
-A file called `gdp.csv` is part of the starter project. It has data on the annual GDP of different countries. Just like with `pop.csv`, you'll only need to make small changes to use it.
+Un fichier appelé `gdp.csv` fait partie du projet de démarrage. Il contient des données sur le PIB annuel de différents pays. Tout comme avec `pop.csv`, tu n'auras qu'à apporter de petites modifications pour l'utiliser.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**GDP**</span> is the Gross Domestic Product. It measures the value, in money, of everything produced in an area over a given time period. It can measure how rich an area is.
+<span style="color: #0faeb0">**PIB**</span> est le produit intérieur brut. Il mesure la valeur monétaire de tout ce qui est produit dans une région sur une période donnée. Il permet de mesurer la richesse d’une région.
 </p>
 
 --- task ---
 
-Change the chart title, the file you are opening, and the category name to draw a chart based on the GDP data in `gdp.csv`.
+Modifie le titre du graphique, le fichier à ouvrir et le nom de la catégorie pour dessiner un graphique basé sur les données de PIB de `gdp.csv`.
 
-The `gdp.csv` file stores the GDP as decimal numbers. Update the type from `int` to `float` so that the numbers are in the correct format.
+Le fichier `gdp.csv` stocke le PIB sous forme de valeurs décimales. Change le type de `int` à `float` afin que les valeurs soient au format correct.
 
 --- code ---
 ---
@@ -86,30 +86,30 @@ with open('gdp.csv') as f: for line in f: #print(line) pieces = line.split(',') 
 
 --- task ---
 
-Now run your program and look at the chart it draws.
+Maintenant, exécute ton programme et regarde le graphique qu'il dessine.
 
-![A bar chart showing the GDP of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/gdp.gif){:width="500px"}
+![Un graphique à barres montrant le PIB de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent à mesure que l'on clique sur les noms des nations.](images/gdp.gif){:width="500px"}
 
-Hover the mouse over the biggest bars and notice which countries they belong to. Click the names of the really big ones to remove them from the chart; that will let you take a closer look at the others. Did any of the richest countries' teams have very large numbers of medals?
+Survole les barres les plus hautes avec la souris et remarque à quels pays elles appartiennent. Clique sur les noms des très grandes pour les supprimer du graphique ; cela te permettra d'examiner les autres de plus près. Certaines équipes des pays les plus riches ont-elles remporté un très grand nombre de médailles ?
 
 --- /task ---
 
-### What did you find?
-What did you discover by using your program to look at this data?
+### Qu'as-tu remarqué ?
+Qu'as-tu découvert en utilisant ton programme pour examiner ces données ?
 
- - There are some signs that the number of people a team has to choose from helps it earn medals.
- - But population doesn't explain how countries like France have so many medals. Or why India doesn't have as many medals as China or the USA.
- - Money seems to explain more. Most of the countries that have lots of medals have high GDPs too.
- - Neither of them explains everything. There are teams that don't follow this pattern.
+ - Certains signes indiquent que le nombre de personnes parmi lesquelles une équipe doit choisir l'aide à remporter des médailles.
+ - Mais la population n'explique pas pourquoi des pays comme la France ont autant de médailles. Ou pourquoi l'Inde n'a pas autant de médailles que la Chine ou les États-Unis.
+ - L'argent semble être plus déterminant. La plupart des pays qui ont beaucoup de médailles ont également un PIB élevé.
+ - Aucun des deux n'explique tout. Il y a des équipes qui ne suivent pas ce modèle.
 
 --- collapse ---
 ---
-title: Jamaica does better than bigger and richer countries
+title: La Jamaïque fait mieux que des pays plus grands et plus riches
 ---
-This isn't a problem in a maths book. So the answer isn't simple. For example, look at Jamaica. Jamaica doesn't have a large population, or a large GDP.
+Ce n'est pas un problème qu'on trouve dans un livre de mathématiques. La réponse n’est donc pas simple. Par exemple, regarde la Jamaïque. La Jamaïque n'a pas une grande population ni un PIB important.
 
-Mexico, Ireland, Portugal, Saudi Arabia, and Singapore all have more people and more money. They even have more money per person. But Jamaica has won more medals than any of them!
+Le Mexique, l’Irlande, le Portugal, l’Arabie saoudite et Singapour ont tous plus d’habitants et plus d’argent. Ils ont même plus d'argent par personne. Mais la Jamaïque a remporté plus de médailles que n’importe lequel d’entre eux !
 
 --- /collapse ---
 
-So there's more to what it takes to win Olympic medals than just people and money. What else might it be? What other ideas could you test, and what kind of data would you need to do so?
+Il faut donc bien plus que des personnes et de l’argent pour remporter des médailles olympiques. Qu'est-ce que ça pourrait être d'autre ? Quelles autres idées pourrais-tu tester, et de quel type de données aurais-tu besoin pour le faire ?
