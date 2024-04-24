@@ -1,30 +1,30 @@
 ---
-title: Charting champions
+title: Kampioenen in kaart brengen
 hero_image: images/banner.png
 description:
-  - Discover the power of lists in Python by creating an interactive chart
-  - of Olympic medals
-meta_title: Python coding projects for kids and teens | Charting champions
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Discover the power of lists in Python by creating a chart of Olympic medals.
+  - Ontdek de kracht van lijsten in Python door een interactieve grafiek te maken
+  - van Olympische medailles
+meta_title: Python-coderingsprojecten voor kinderen en tieners | Kampioenen in kaart brengen
+meta_description: Leer Python met de codeerprojecten van de Raspberry Pi Foundation voor kinderen en tieners. Ontdek de kracht van lijsten in Python door een overzicht van Olympische medailles te maken.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-10-07"
 steps:
   - 
-    title: You will make
+    title: Wat ga je maken
   - 
-    title: Make a chart
+    title: Maak een grafiek
   - 
-    title: Load data from a file
+    title: Gegevens uit een bestand lezen
     completion:
       - engaged
   - 
-    title: Investigate with data
+    title: Onderzoek met data
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Verbeter je project
   - 
-    title: What next?
+    title: Wat kun je verder nog doen?
