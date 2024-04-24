@@ -1,10 +1,10 @@
-## What next?
+## Wat nu?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Solar system](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In that project, you will make a model of the solar system to teach people about the planets.
+Als je het [Meer Python](https://projects.raspberrypi.org/en/pathways/more-python) pad volgt, kun je doorgaan naar het [Zonnestelsel](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In dat project maak je een model van het zonnestelsel om mensen over de planeten te leren.
 
 --- print-only ---
 
-![The solar system project.](images/solar_system_simulator.png)
+![Het zonnestelselproject.](images/solar_system_simulator.png)
 
 --- /print-only ---
 
@@ -15,4 +15,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Als je meer plezier wilt hebben met het verkennen van Python, dan kun je een van [deze projecten](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) uitproberen.
