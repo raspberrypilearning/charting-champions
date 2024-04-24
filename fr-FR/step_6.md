@@ -1,51 +1,51 @@
-## Upgrade your project
+## Améliorer ton projet
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, change how your chart looks, or what data it uses.
+Au cours de cet exercice, modifie l'apparence de ton graphique ou les données qu'il utilise.
 </div>
 <div>
-![A pie chart showing the running time of Marvel films.](images/mcu_pie.png){:width="300px"}
+![Un camembert montrant la durée des films Marvel.](images/mcu_pie.png){:width="300px"}
 </div>
 </div>
 
-### Use a pie chart
-Try using a pie chart for a different look, or to show how something is divided.
+### Utiliser un camembert
+Essaie d'utiliser un camembert pour un look différent ou pour montrer comment quelque chose est divisé.
 
 --- task ---
 
-To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`.
+Pour créer un camembert au lieu d'un graphique à barres, change l'importation de `pygal` sur `Pie` au lieu de `Bar`. Fais de même pour la fonction que tu appelles pour créer un `graphique`.
 
 --- /task ---
 
-### Use a different set of data
-You can load and chart any data that's in a `.csv` file with the program you've written.
+### Utiliser un autre ensemble de données
+Tu peux charger et tracer toutes les données contenues dans un fichier `.csv` avec le programme que tu as écrit.
 
 --- task ---
 
-**Choose:** Pick a different datafile for your project. There are two available:
+**Choisir :** sélectionne un fichier de données différent pour ton projet. Il y en a deux :
 
- - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
- - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
+ - `mcu.csv` est la durée et le revenu brut des films Marvel Cinematic Universe
+ - `carbon.csv` est le total (en milliers de tonnes) et par personne (tonnes) des émissions de dioxyde de carbone de différents pays et régions
 
 --- /task ---
 
 --- task ---
 
-Update the code that reads from `medals.csv` to read from your new file.
+Mets à jour le code qui lit à partir de `medals.csv` pour qu'il lise à partir de ton nouveau fichier.
 
-These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart.
+Ces fichiers comportent plusieurs colonnes de nombres. Utilise les index de la liste `tally` pour choisir lesquels ajouter à ton graphique.
 
-The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
+Les données sur le dioxyde de carbone utilisent des nombres avec des décimales. Pour les convertir à partir de chaînes de texte, tu devras utiliser `float()` au lieu de `int()`.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Completed project
+title: Le projet terminé
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"}.
+Tu peux voir le [projet terminé ici](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"}.
 
 --- /collapse ---
 
