@@ -1,0 +1,31 @@
+Créer un graphique
+
+Médailles olympiques
+
+Afficher le graphique
+
+États-Unis
+
+Grande-Bretagne
+
+France
+
+Allemagne
+
+Chine
+
+Ajouter des données au graphique
+
+Diviser la chaîne en une liste
+
+Imprimer chaque liste
+
+Convertir les médailles en nombre
+
+Population
+
+Convertir la population en nombre
+
+PIB
+
+Convertir le PIB en nombre
