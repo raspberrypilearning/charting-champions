@@ -1,37 +1,37 @@
-chart
+graphique
 
-line
+ligne
 
-pieces
+parties
 
-team
+equipe
 
-medals
+medailles
 
 population
 
-gdp
+pib
 
-names
+noms
 
-cat
+chat
 
-dog
+chien
 
-rabbit
+lapin
 
 info
 
-colours
+couleurs
 
-red
+rouge
 
-green
+vert
 
-blue
+bleu
 
-yellow
+jaune
 
-pink
+rose
 
-brown
+brun
