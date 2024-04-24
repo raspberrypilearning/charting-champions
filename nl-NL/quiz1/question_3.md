@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-You have a program with this code:
+Je hebt een programma met deze code:
 
 --- code ---
 ---
@@ -18,7 +18,7 @@ print(colours[2])
 
 --- /code ---
 
-If you run the program, which of these would you expect it to display?
+Als je het programma uitvoert, welke van deze opties verwacht je dan dat deze wordt weergegeven?
 
 --- choices ---
 
@@ -33,7 +33,7 @@ brown
 ```
   --- feedback ---
 
-  That's not quite right — a particular list element has been selected using `[]`.
+  Dat klopt niet helemaal: een bepaald lijstelement is geselecteerd met `[]`.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ blue
 
   --- feedback ---
 
-  That's correct! 'blue' is the list item that was selected for printing.
+  Dat is correct! 'blauw' is het lijstitem dat is geselecteerd om af te drukken.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ green
 
   --- feedback ---
 
-  Not exactly. Although 'green' is the second item in the list, list indexes start at `0`.
+  Niet helemaal. Hoewel 'groen' het tweede item in de lijst is, beginnen lijstindexen bij `0`.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ blue
 
   --- feedback ---
 
-  Not quite. The `2` in the square brackets is the index of the item to be printed, not the number of times to print it.
+  Niet helemaal. De `2` tussen vierkante haakjes is de index van het item dat moet worden afgedrukt, niet het aantal keren dat het moet worden afgedrukt.
 
   --- /feedback ---
 
