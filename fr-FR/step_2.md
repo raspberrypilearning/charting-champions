@@ -1,69 +1,69 @@
-## Make a chart
+## Créer un graphique
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a chart and some lists of data to display on it.
+Crée un graphique et des listes de données à afficher dessus.
 </div>
 <div>
-![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
+![Un graphique à barres montrant les médailles remportées par les États-Unis, la Grande-Bretagne et la France.](images/short_list.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Charting champions starter project](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Ouvre le [projet de démarrage Champions du classement](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. Le Code Editor Raspberry Pi s'ouvre dans un autre onglet du navigateur.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Si tu as un compte Raspberry Pi, tu peux cliquer sur **Enregistrer** pour enregistrer une copie du code de démarrage dans ta bibliothèque.
 
-If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+Si tu n'utilises pas le Code Editor dans ton navigateur, tu devras télécharger les fichiers du projet et tu devras peut-être installer `pygal` avant de pouvoir l'importer.
 
 --- collapse ---
 
 ---
-title: Offline project files
+title: Fichiers de projet hors ligne
 ---
 
-Download the project files, unzip them, and store them on your computer. For this step you will need `starter.py`, the other files will be used later in the project.
+Télécharge les fichiers du projet, décompresse-les et stocke-les sur ton ordinateur. Pour cette étape, tu auras besoin de `starter.py`, les autres fichiers seront utilisés plus tard dans le projet.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Installing pygal
+title: Installer pygal
 ---
 
-### On Windows
-In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+### Sur Windows
+Dans **l'invite de commande**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
-### On a Mac
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Sur Mac
+Dans le **Terminal**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip3 install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
-### On Linux, including Raspberry Pi OS
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Sur Linux, y compris Raspberry Pi OS
+Dans le **Terminal**, tape ce qui suit et appuie sur la touche <kbd>Entrée</kbd> :
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Attends que l'installation se termine, puis poursuis le projet.
 
 --- /collapse ---
 
 --- /task ---
 
-The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
+Le projet de démarrage contient déjà du code pour importer la bibliothèque `pygal`, que tu utiliseras pour dessiner ton graphique.
 
 --- code ---
 ---
@@ -75,11 +75,11 @@ from pygal import bar
 
 --- /code ---
 
-### Make a chart
+### Créer un graphique
 
 --- task ---
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
+Recherche le commentaire `# Créer un graphique` et ajoute du code en dessous pour créer un graphique à barres appelé `graphique`. Donne un titre à ton graphique à l'intérieur des parenthèses.
 
 --- code ---
 ---
@@ -95,7 +95,7 @@ chart = Bar(title='Olympic medals')
 
 --- task ---
 
-Call `chart.render()` to display the chart.
+Appelle `graphique.render()` pour afficher le graphique.
 
 --- code ---
 ---
@@ -109,28 +109,28 @@ chart.render() --- /code ---
 
 --- task ---
 
-**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
+**Test :** exécute ton code pour voir le graphique. Il sera vide, car il ne contient pas encore de données.
 
-![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
+![Les mots « Médailles olympiques » sur fond noir.](images/empty_chart.png){:width="300px"}
 
-**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
+**Débogage** : si tu vois une erreur indiquant que `Bar()` ou `graphique.render()` n'est pas défini (`not defined`) :
 
- - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
- - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
+ - Si l'erreur concerne `Bar()`, vérifie qu'il y a bien un B majuscule au début et des crochets à la fin.
+ - Si l'erreur concerne `graphique.render()`, vérifie qu'il y a bien un `.` entre `graphique` et `render`, ainsi que des crochets à la fin.
 
-**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+**Débogage** : si tu n'utilises pas le Code Editor Raspberry Pi, et que le graphique ne s'est pas affiché lorsque tu as exécuté ton code, remplace `graphique.render()` par `graphique.render_in_browser()`.
 
 --- /task ---
 
-### Add some data
+### Ajouter des données
 
-Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
+Python peut stocker des données associées sous forme de **liste**. Tu peux créer des listes en utilisant des crochets `[]`. Les éléments d'une liste sont séparés par des virgules.
 
 --- task ---
 
-Create three lists of data to show on your chart.
+Crée trois listes de données à afficher sur ton graphique.
 
-Each list will store a nation's name and the number of medals won by that nation.
+Chaque liste stockera le nom d'une nation et le nombre de médailles remportées par cette nation.
 
 --- code ---
 ---
@@ -144,13 +144,13 @@ us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751]
 
 --- /task ---
 
-When you store something in a list, it gets an **index**. An index is a number that tells you an item's position in a list. List indexes start from `0`, instead of `1`.
+Lorsque tu places un élément dans une liste, il est associé à un **index**. Un index est un numéro qui indique la position d'un élément dans une liste. Les index de liste commencent à `0`, et non à `1`.
 
 --- task ---
 
-You can get an item from a list by its index. For example, `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
+Tu peux obtenir un élément d'une liste par son index. Par exemple, `ma_liste[3]` obtient le **quatrième** élément de `ma_liste`, car les index commencent à `0`.
 
-Use the indexes of your lists and `chart.add()` to display your data. The nation's name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
+Utilise les index de tes listes et `graphique.add()` pour afficher tes données. Le nom de la nation, correspondant à l'élément 0, sera utilisé comme libellé de catégorie pour le graphique et le nombre de médailles, correspondant à l'élément 1, déterminera la hauteur de la barre.
 
 --- code ---
 ---
@@ -167,19 +167,19 @@ chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1])
 
 --- task ---
 
-**Test:** Run your code to see the chart.
+**Test :** exécute ton code pour voir le graphique.
 
-![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
+![Un graphique à barres montrant les médailles remportées par les États-Unis, la Russie et la Grande-Bretagne.](images/short_list.png){:width="300px"}
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `us[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+**Débogage** : si tu vois un message `IndexError`, ton code essaie d'obtenir une valeur à partir d'un index de liste qui n'existe pas (par exemple, `us[2]`). Pour résoudre cette erreur :
+ - Vérifie chacune de tes lignes `graphique.add` pour être sûr que tu utilises uniquement `0` et `1` comme index.
+ - Vérifie les lignes où tu as créé tes listes. Chaque liste doit comporter deux éléments, séparés par une virgule.
 
 --- /task ---
 
 --- task ---
 
-Now load two more teams by adding new lists and `chart.add()` calls.
+Maintenant, charge deux équipes supplémentaires en ajoutant des listes et des appels `graphique.add()`.
 
 --- code ---
 ---
@@ -197,13 +197,13 @@ chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.ad
 
 --- task ---
 
-**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
+**Test :** exécute ton code pour voir le graphique mis à jour. Essaie de cliquer sur États-Unis. Observe ensuite l’échelle du graphique changer.
 
-![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
+![Un graphique à barres montrant les médailles remportées par les États-Unis, la Grande-Bretagne, la France, l'Allemagne et la Chine. Si on clique sur États-Unis, la barre la plus haute disparaît du graphique, qui est redimensionné.](images/short_list_2.gif){:width="300px"}
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+**Débogage** : si tu vois un message `IndexError`, ton code essaie d'obtenir une valeur à partir d'un index de liste qui n'existe pas (par exemple, `fr[2]`). Pour résoudre cette erreur :
+ - Vérifie chacune de tes lignes `graphique.add` pour être sûr que tu utilises uniquement `0` et `1` comme index.
+ - Vérifie les lignes où tu as créé tes listes. Chaque liste doit comporter deux éléments, séparés par une virgule.
 
 --- /task ---
 
