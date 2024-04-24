@@ -1,11 +1,11 @@
 #!/bin/python3
 from pygal import Bar
 
-# Create a chart
-chart = Bar(title='Olympic medals')
+# Maak een grafiek
+chart = Bar(title='Olympische medailles')
 
-# Add data to the chart
+# Voeg gegevens toe aan de grafiek
 
 
-# Display the chart
+# Toon de grafiek
 chart.render()
