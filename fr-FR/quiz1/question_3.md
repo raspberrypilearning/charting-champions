@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Question 3 sur 3
 ---
 
-You have a program with this code:
+Tu as un programme avec ce code :
 
 --- code ---
 ---
@@ -18,7 +18,7 @@ print(colours[2])
 
 --- /code ---
 
-If you run the program, which of these would you expect it to display?
+Lorsque tu lanceras le programme, laquelle de ces options devrait s'afficher ?
 
 --- choices ---
 
@@ -33,7 +33,7 @@ brown
 ```
   --- feedback ---
 
-  That's not quite right — a particular list element has been selected using `[]`.
+  Ce n'est pas tout à fait juste — un élément de liste particulier a été sélectionné en utilisant `[]`.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ blue
 
   --- feedback ---
 
-  That's correct! 'blue' is the list item that was selected for printing.
+  C'est correct ! « bleu » est l'élément de liste qui a été sélectionné pour être imprimé.
 
   --- /feedback ---
 
@@ -55,7 +55,7 @@ green
 
   --- feedback ---
 
-  Not exactly. Although 'green' is the second item in the list, list indexes start at `0`.
+  Pas exactement. « vert » est effectivement le deuxième élément de la liste, mais les index de liste commencent à `0`.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ blue
 
   --- feedback ---
 
-  Not quite. The `2` in the square brackets is the index of the item to be printed, not the number of times to print it.
+  Pas tout à fait. Le `2` entre crochets est l'index de l'élément à imprimer, pas le nombre de fois qu'il doit être imprimé.
 
   --- /feedback ---
 
