@@ -1,10 +1,10 @@
 #!/bin/python3
 from pygal import Bar
 
-# Create a chart
+# Créer un graphique
 
 
-# Add data to the chart
+# Ajouter des données au graphique
 
 
-# Display the chart
+# Afficher le graphique
