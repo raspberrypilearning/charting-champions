@@ -1,25 +1,25 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Vul onze enquête in</a> om onze Code Editor te helpen verbeteren!
 </div>
 
-## You will make
+## Wat ga je maken
 
-Discover the power of lists in Python by creating an interactive chart of Olympic medals.
+Ontdek de kracht van lijsten in Python door een interactieve grafiek van Olympische medailles te maken.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896: thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
+<span style="color: #0faeb0">**De Olympische Spelen**</span> begonnen in 1896: duizenden atleten vertegenwoordigen honderden landen van over de hele wereld. De moderne spelen zijn geïnspireerd op oude wedstrijden die in Olympia, Griekenland, werden gehouden.
 </p>
 
-You will:
- - Use **lists** to store related data
- - Create a **chart** using the `pygal` library
- - Load data by having your program **read a file**
+Je gaat:
+ - Gebruik maken van **lijsten** om gerelateerde gegevens op te slaan
+ - Een **grafiek** maken met behulp van de `pygal` bibliotheek
+ - Gegevens laden door je programma **een bestand te laten lezen**
 
 --- no-print --- --- task ---
-### Play ▶️
+### Afspelen ▶️
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
+Voer het programma uit om de grafiek te laden. Merk op dat de grafiek interactief is. Wat gebeurt er als je op de drie beste landen in het overzicht aan de linkerkant klikt?
 </div>
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/charting-champions-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
