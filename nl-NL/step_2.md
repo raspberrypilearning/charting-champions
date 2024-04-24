@@ -1,69 +1,69 @@
-## Make a chart
+## Maak een grafiek
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Create a chart and some lists of data to display on it.
+Maak een grafiek en enkele lijsten met gegevens die je erin wilt weergeven.
 </div>
 <div>
-![A bar chart showing the medals won by the United States, Great Britain, and France.](images/short_list.png){:width="300px"}
+![Een staafdiagram met de medailles die zijn gewonnen door de Verenigde Staten, Groot-Brittannië en Frankrijk.](images/short_list.png){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Open the [Charting champions starter project](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Open het [Kampioenen in kaart brengen startproject](https://editor.raspberrypi.org/en/projects/charting-champions-starter){:target="_blank"}. De Raspberry Pi code-editor wordt geopend in een ander browsertabblad.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Als je een Raspberry Pi-account hebt, kun je op de **Save** klikken om een kopie van de startcode op te slaan in je bibliotheek.
 
-If you are not using the code editor in your browser, you will need to download the project files and you may need to install `pygal` before you can import it.
+Als je de code editor niet gebruikt in je browser, moet je de projectbestanden downloaden en misschien `pygal` installeren voordat je deze kunt importeren.
 
 --- collapse ---
 
 ---
-title: Offline project files
+title: Offline projectbestanden
 ---
 
-Download the project files, unzip them, and store them on your computer. For this step you will need `starter.py`, the other files will be used later in the project.
+Download de projectbestanden, pak ze uit en sla ze op op je computer. Voor deze stap heb je `starter.py`nodig, de andere bestanden zullen later in het project worden gebruikt.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Installing pygal
+title: Pygal installeren
 ---
 
-### On Windows
-In the **Command Prompt** type the following and press the <kbd>Enter</kbd> key:
+### In Windows
+In de **opdrachtprompt** typ je het volgende en druk je op de <kbd>Enter</kbd> toets:
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Wacht tot de installatie is voltooid en ga vervolgens verder met het project.
 
-### On a Mac
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Op een Mac
+In de **Terminal** typ je het volgende en druk je op de <kbd>Enter</kbd> toets:
 
 ```
 pip3 install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Wacht tot de installatie is voltooid en ga vervolgens verder met het project.
 
-### On Linux, including Raspberry Pi OS
-In the **Terminal** type the following and press the <kbd>Enter</kbd> key:
+### Op Linux, inclusief Raspberry Pi OS
+In de **Terminal** typ je het volgende en druk je op de <kbd>Enter</kbd> toets:
 
 ```
 pip install pygal
 ```
 
-Wait for the installation to complete and then continue with the project.
+Wacht tot de installatie is voltooid en ga vervolgens verder met het project.
 
 --- /collapse ---
 
 --- /task ---
 
-The starter project already has some code to import the `pygal` library, which you will use to draw your chart.
+Het startproject bevat al code om de `pygal` bibliotheek te importeren, die je gaat gebruiken om je grafiek te maken.
 
 --- code ---
 ---
@@ -75,11 +75,11 @@ from pygal import bar
 
 --- /code ---
 
-### Make a chart
+### Maak een grafiek
 
 --- task ---
 
-Find the `# Create a chart` comment and add code below it to make a bar chart called `chart`, inside the brackets give your chart a title.
+Zoek de opmerking `# Maak een grafiek` en voeg code eronder toe om een staafdiagram te maken met de naam `chart`. Geef je grafiek een titel, en zet deze tussen 2 ronde haakjes ( ).
 
 --- code ---
 ---
@@ -95,7 +95,7 @@ chart = Bar(title='Olympic medals')
 
 --- task ---
 
-Call `chart.render()` to display the chart.
+Roep `chart.render()` aan om de grafiek weer te geven.
 
 --- code ---
 ---
@@ -109,28 +109,28 @@ chart.render() --- /code ---
 
 --- task ---
 
-**Test:** Run your code to see the chart. It will be empty because it doesn't have data yet.
+**Test:** Voer je code uit om de grafiek te zien. Deze zal leeg zijn omdat er nog geen gegevens in geladen zijn.
 
-![The words 'Olympic medals' on a black background.](images/empty_chart.png){:width="300px"}
+![De woorden 'Olympische medailles' op een zwarte achtergrond.](images/empty_chart.png){:width="300px"}
 
-**Debug**: If you see an error about `Bar()` or `chart.render()` being `not defined`:
+**Fouten opsporen**: Als je een foutmelding ziet over `Bar()` of `chart.render()` die `not defined` (niet gedefinieerd) zijn:
 
- - If the error is for `Bar()`, make sure it has an uppercase B at the start, and brackets at the end
- - If the error is for `chart.render()`, check that it has the `.` between `chart` and `render`, as well as the brackets at the end
+ - Als de fout `Bar()`is, zorg er dan voor dat er een hoofdletter B aan het begin staat en haakjes aan het einde
+ - Als de fout voor `chart.render()`is, controleer dan of deze een `.` heeft tussen `chart` en `render`, en kijk ook of je de haakjes aan het einde niet bent vergeten
 
-**Debug**: If you are not using the Raspberry Pi code editor, and the graph hasn't appeared when you run your code, replace `chart.render()` with `chart.render_in_browser()`.
+**Fouten opsporen**: Als je de Raspberry Pi code editor niet gebruikt, en de grafiek verschijnt niet wanneer je de code laat uitvoeren, vervang dan `chart.render()` door `chart.render_in_browser()`.
 
 --- /task ---
 
-### Add some data
+### Voeg wat gegevens toe
 
-Python can store related data as a **list**. You can create lists by using square brackets `[]`. Items in a list are separated with commas.
+Python kan gerelateerde gegevens opslaan als een **lijst**. Je kunt lijsten maken met vierkante haakjes `[]`. Items in een lijst worden gescheiden door komma's.
 
 --- task ---
 
-Create three lists of data to show on your chart.
+Maak drie lijsten met gegevens die je in je grafiek wilt weergeven.
 
-Each list will store a nation's name and the number of medals won by that nation.
+Elke lijst bevat de naam van een land en het aantal medailles dat dat land heeft gewonnen.
 
 --- code ---
 ---
@@ -144,13 +144,13 @@ us = ['United States', 2399] gb = ['Great Britain', 1304] fr = ['France', 751]
 
 --- /task ---
 
-When you store something in a list, it gets an **index**. An index is a number that tells you an item's position in a list. List indexes start from `0`, instead of `1`.
+Wanneer je iets in een lijst opslaat, krijgt het een **index**. Een index is een getal dat je de positie van een item in een lijst aangeeft. Lijstindexen beginnen bij `0`, niet bij `1`.
 
 --- task ---
 
-You can get an item from a list by its index. For example, `my_list[3]` will get the **fourth** item in `my_list`, because indexes start at `0`.
+Je kunt een item uit een lijst halen via de index. Bijvoorbeeld, `mijn_lijst[3]` haalt het **vierde** item op uit `mijn_lijst`, omdat indexen beginnen met `0`.
 
-Use the indexes of your lists and `chart.add()` to display your data. The nation's name at item 0 will be used as a category label for the chart and the amount of medals at item 1 will determine the height of the bar.
+Gebruik de indexen van je lijsten en `chart.add()` om jouw gegevens weer te geven. De naam van het land bij item 0 zal worden gebruikt als categorielabel voor de grafiek en het aantal medailles bij item 1 zal de hoogte van de balk bepalen.
 
 --- code ---
 ---
@@ -167,19 +167,19 @@ chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1])
 
 --- task ---
 
-**Test:** Run your code to see the chart.
+**Test:** Voer je code uit om de grafiek te zien.
 
-![A bar chart showing the medals won by the United States, Russia, and Great Britain.](images/short_list.png){:width="300px"}
+![Een staafdiagram met de medailles die zijn gewonnen door de Verenigde Staten, Rusland en Groot-Brittannië.](images/short_list.png){:width="300px"}
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `us[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+**Fouten opsporen**: Als je een bericht ziet over een `IndexError`, probeert je code een waarde op te halen uit een lijstindex die niet bestaat (bijv. `ons[2]`). Om dit op te lossen:
+ - Controleer elk van je `chart.add` regels om er zeker van te zijn dat je alleen `0` en `1` als indexen gebruikt.
+ - Controleer de regels waar je jouw lijsten hebt gemaakt. Zorg ervoor dat elke lijst twee items bevat, gescheiden door een komma.
 
 --- /task ---
 
 --- task ---
 
-Now load two more teams by adding new lists and `chart.add()` calls.
+Laad nu nog twee teams door nieuwe lijsten en `chart.add()` aanroepen toe te voegen.
 
 --- code ---
 ---
@@ -197,13 +197,13 @@ chart.add(us[0], us[1]) chart.add(gb[0], gb[1]) chart.add(fr[0], fr[1]) chart.ad
 
 --- task ---
 
-**Test:** Run your code to see the updated chart. Try clicking on the United States' name. Then watch the scale of the chart change.
+**Test:** Voer je code uit om de bijgewerkte grafiek te zien. Probeer op de naam van de Verenigde Staten te klikken. Kijk vervolgens hoe de schaal van de grafiek verandert.
 
-![A bar chart showing the medals won by the United States, Great Britain, France, Germany, and China. When the United States' name is clicked, the tallest bar vanishes from the chart, which resizes.](images/short_list_2.gif){:width="300px"}
+![Een staafdiagram met de medailles die zijn gewonnen door de Verenigde Staten, Groot-Brittannië, Frankrijk, Duitsland en China. Wanneer er op de naam van de Verenigde Staten wordt geklikt, verdwijnt de hoogste balk uit het diagram en wordt het formaat aangepast.](images/short_list_2.gif){:width="300px"}
 
-**Debug**: If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `fr[2]`). To fix this:
- - Check each of your `chart.add` lines to be sure you are only using `0` and `1` as indexes.
- - Check the lines where you created your lists. Make sure each list has two items, separated by a comma.
+**Fouten opsporen**: Als je een bericht ziet over een `IndexError`, probeert je code een waarde op te halen uit een lijstindex die niet bestaat (bijv. `ons[2]`). Om dit op te lossen:
+ - Controleer elk van je `chart.add` regels om er zeker van te zijn dat je alleen `0` en `1` als indexen gebruikt.
+ - Controleer de regels waar je jouw lijsten hebt gemaakt. Zorg ervoor dat elke lijst twee items bevat, gescheiden door een komma.
 
 --- /task ---
 
