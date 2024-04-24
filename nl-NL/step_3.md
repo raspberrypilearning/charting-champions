@@ -1,58 +1,58 @@
-## Load data from a file
+## Gegevens uit een bestand lezen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
+De grafiek ziet er goed uit! Maar bijna 150 landen hebben deelgenomen aan de Olympische Spelen. Om ze in kaart te brengen, ga je hun gegevens uit een bestand laden. Het scheelt een hoop typwerk!
 </div>
 <div>
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
+![Een staafdiagram dat de medailletellingen van veel landen weergeeft. Informatie verschijnt wanneer de muis over een balk beweegt. Balken verdwijnen als er op de namen van landen wordt geklikt.](images/adjust_chart.gif){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
+<span style="color: #0faeb0">**Computers en gegevens**</span> Je begint net te leren hoe je je computer met gegevens kunt laten werken. Computers kunnen geweldige dingen doen met de juiste gegevens. En ze kunnen in minuten meer gegevens lezen dan een mens in jaren. Python is een van de beste programmeertalen die er zijn voor data. Het YouTube-algoritme, dat de video's uitkiest die jij te zien krijgt, is gemaakt met Python.
 </p>
 
 --- task ---
 
-Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Rapsberry Pi code editor will open in another browser tab.
+Open het [tweede startproject](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. De Raspberry Pi code-editor wordt geopend in een ander browsertabblad.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Als je een Raspberry Pi-account hebt, kun je op de **Save** klikken om een kopie van de startcode op te slaan in je bibliotheek.
 
 --- collapse ---
 
 ---
-title: Working offline
+title: Offline werken
 ---
 
-You will need `starter2.py` and the `.csv` files for this step.
+Voor deze stap heb je `starter2.py` en de `.csv` bestanden nodig.
 
 --- /collapse ---
 
 --- /task ---
 
-There are several `.csv` files included in this starter project that contain the data you need for your charts.
+Er zijn verschillende `.csv` bestanden opgenomen in dit startproject die de gegevens bevatten die je nodig hebt voor je grafieken.
 
 --- task ---
 
-Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
+Open `medals.csv` en bekijk de gegevens daarin. Bekijk hoe elke regel een teamnaam heeft en het aantal medailles dat ze hebben gewonnen, gescheiden door een komma.
 
-![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
+![De Raspberry Pi-code-editor met het medaillebestand gemarkeerd en geopend, met een lijst met landen en aantal medailles, gescheiden door een komma.](images/medals-tab.png)
 
 --- /task ---
 
 <div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-![A few lines of a csv file.](images/csv_sample.png){:width="200px"}
+<span style="color: #0faeb0">**CSV-bestanden**</span> zijn bestanden met door komma's gescheiden waarden. Ze bevatten gegevens in rijen en kolommen, zoals een tabel. Elke regel is een rij, waarbij komma's de waarden van die rij in kolommen scheiden.
+![Een paar regels van een csv-bestand.](images/csv_sample.png){:width="200px"}
 </div>
 
-You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
+Je moet elke regel van `medals.csv` in Python omzetten in een tekstreeks en een getal, zoals in de lijsten die je hebt gemaakt.
 
 --- task ---
 
-Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+Klik op het tabblad `main.py` en voeg code toe om het bestand in een variabele te laden door ` with open() as`. Gebruik vervolgens een `for` lus om elke regel van de variabele `af te drukken`.
 
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
+Met de `for` lus kun je code herhalen. Je laadt dus met slechts een paar regels code honderden teams in jouw grafiek!
 
 [[[generic-python-file-read]]]
 
@@ -68,25 +68,25 @@ with open('medals.csv') as f: for line in f: print(line) --- /code ---
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out.
+**Test:** Voer je code uit en kijk naar de tekst die wordt afgedrukt.
 
-Notice that each line has two values, separated by commas.
+Merk op dat elke regel twee waarden heeft, gescheiden door komma's.
 
-![A list of text strings, printed out over many lines.](images/lines.png)
+![Een lijst met tekstreeksen, afgedrukt over vele regels.](images/lines.png)
 
-**Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
+**Fouten opsporen:** Als de code niet werkt, zorg er dan voor dat je deze hebt ingesprongen onder de regel `with`, zoals in het bovenstaande voorbeeld.
 
 --- /task ---
 
-Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
+Elke string die door jouw lus wordt afgedrukt, bestaat uit twee stukken, gescheiden door een komma. Je functie `chart.add()` heeft elk van deze onderdelen als afzonderlijke invoer nodig.
 
-The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
+De functie `split()` verdeelt een string in een lijst, net zoals de lijsten die je eerder hebt gemaakt. De functie `split(',')` maakt een nieuw lijstitem telkens wanneer er een komma staat.
 
 --- task ---
 
-Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it.
+Plaats een `#` voor de code die `regel`afdrukt. Hierdoor wordt die code omgezet in een comment, zodat Python deze zal negeren.
 
-Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
+Gebruik de `split()` methode om elke tekstreeks op te splitsen bij een `,` en sla vervolgens het eerste en tweede stuk op in een nieuwe lijst. Print deze lijsten vervolgens uit.
 
 --- code ---
 ---
@@ -95,25 +95,25 @@ line_highlights: 12-13
 ---
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') # Breaks the string into a list print(pieces) # Print each list --- /code ---
 
-**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
+**Tip:** `split()` kan een string splitsen in een lijst rond elke gewenste tekst. Je kunt splitsen op leestekens, een letter of zelfs hele woorden.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out. Each line should be a list with two items. You may notice that the second item has `\n` at the end. `\n` is usually invisible. It tells the computer it has reached the end of the line in a file.
+**Test:** Voer je code uit en kijk naar de tekst die wordt afgedrukt. Elke regel moet een lijst zijn met twee items. Het zal je misschien opvallen dat het tweede item aan het eind `\n` heeft. `\n` is meestal onzichtbaar. Het vertelt de computer dat het het einde van de regel in een bestand heeft bereikt.
 
-![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
+![Veel lijsten, elk met twee items, afgedrukt.](images/tally.png){:width="400px"}
 
-**Debug:** If your `pieces` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
+**Fouten opsporen:** Als je `stukken` een lijst afdrukt met slechts één item, controleer dan of je `','` in de `()` van `line.split()` hebt.
 
-**Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
+**Fouten opsporen:** Als je een bericht ziet dat `split` 'not defined' is, controleer dan of je `line.` ervoor hebt toegevoegd.
 
 --- /task ---
 
 --- task ---
 
-Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
+Laad jouw gegevens in de grafiek als onderdeel van je `for` lus. `team` is een tekenreeks en kan dus als label in de grafiek worden gebruikt. `medaille` is momenteel een string, maar moet worden omgezet naar een getal. Je kunt de functie `int()` gebruiken om een string in een getal **om te zetten**.
 
 --- code ---
 ---
@@ -122,22 +122,22 @@ line_highlights: 14-16
 ---
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] medals = pieces[1] chart.add(team, int(medals))  # Make medals a number --- /code ---
 
-**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
+**Tip:** Je kunt nu `#` gebruiken om `print(stukken)` ook in een opmerking om te zetten.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+**Test:** Voer je code uit en kijk naar de grafiek die wordt gemaakt. Beweeg de muis over een aantal balken of klik op de namen van teams om ze toe te voegen aan of te verwijderen uit het de grafiek.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
+![Een staafdiagram dat de medailletellingen van veel landen weergeeft. Informatie verschijnt wanneer de muis over een balk beweegt. Balken verdwijnen als er op de namen van landen wordt geklikt.](images/adjust_chart.gif){:width="400px"}
 
-**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
+**Fouten opsporen:** Als je grafiek leeg is, controleer dan of je `int(medailles)` hebt opgenomen in je `chart.add()`.
 
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
- - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
- - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
- - Check you do not have a blank line at the bottom of your .csv file.
+**Fouten opsporen**: Als je een bericht ziet over een `IndexError`, dan probeert je code een waarde op te halen uit een lijstindex die niet bestaat (bijv. `stukken[2]`). Om dit op te lossen:
+ - Controleer elk van je `team` en `medaille` variabelen om er zeker van te zijn dat je alleen `0` en `1` als indexen gebruikt.
+ - Controleer de afgedrukte `stukken` lijst om er zeker van te zijn dat deze twee items bevat: ['Tonga', '1\n']</code>, en niet `['Tonga,1\n']`. Als dat niet zo is, controleer dan dat je een `','` hebt in de `()` van de `line.split()`.
+ - Controleer of er geen lege regel onderaan je .csv-bestand staat.
 
 --- /task ---
 
