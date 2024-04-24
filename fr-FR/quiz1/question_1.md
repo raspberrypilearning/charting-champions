@@ -1,18 +1,18 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-You created and used a lot of lists in your project. Which of these is the proper way to create a list of animal names?
+Tu as créé et utilisé beaucoup de listes dans ton projet. Quelle est la bonne façon de créer une liste de noms d'animaux ?
 
 --- choices ---
 
@@ -23,7 +23,7 @@ names = ('cat', 'dog', 'rabbit')
 
   --- feedback ---
 
-  Close! But lists don't use parentheses — `()`.
+  Presque ! Mais les listes n'utilisent pas de parenthèses — `()`.
 
   --- /feedback ---
 
@@ -34,7 +34,7 @@ names = ['cat', 'dog', 'rabbit']
 
   --- feedback ---
 
-  That's correct! Lists use square brackets (`[]`) and commas between the items on the list.
+  C'est correct ! Les listes utilisent des crochets (`[]`) et des virgules entre les éléments de la liste.
 
   --- /feedback ---
 
@@ -45,7 +45,7 @@ names = ['cat' 'dog' 'rabbit']
 
   --- feedback ---
 
-  Not quite, list items are separated by more than spaces.
+  Pas tout à fait, les éléments d'une liste ne sont pas séparés que par des espaces.
 
   --- /feedback ---
 
@@ -56,7 +56,7 @@ names = ['cat': 'dog': 'rabbit']
 
   --- feedback ---
 
-  Very close, but lists aren't separated by colons (`:`).
+  C'est presque ça, mais les listes ne sont pas séparées par deux-points (`:`).
 
   --- /feedback ---
 
