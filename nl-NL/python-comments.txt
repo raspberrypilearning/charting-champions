@@ -1,31 +1,31 @@
-Create a chart
+Maak een grafiek
 
-Olympic medals
+Olympische medailles
 
-Display the chart
+Toon de grafiek
 
-United States
+Verenigde Staten
 
-Great Britain
+Groot Brittanië
 
-France
+Frankrijk
 
-Germany
+Duitsland
 
 China
 
-Add data to the chart
+Voeg gegevens toe aan de grafiek
 
-Breaks the string into a list
+Verdeelt de tekenreeks in een lijst
 
-Print each list
+Druk elke lijst af
 
-Make medals a number
+Maak van medailles een getal
 
-Population
+Bevolking
 
-Make population a number
+Maak van bevolking een getal
 
-GDP
+BBP
 
-Make GDP a number
+Maak van BBP een getal
