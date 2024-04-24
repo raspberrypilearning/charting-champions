@@ -1,21 +1,21 @@
 #!/bin/python3
 from pygal import Bar
 
-# Create a chart
-chart = Bar(title='Olympic medals')
+# Créer un graphique
+graphique = Bar(title='Médailles olympiques')
 
-# Add data to the chart
+# Ajouter des données au graphique
 with open('medals.csv') as f:
-    data = f.read()
-    lines = data.splitlines()
-    # print(lines)
+    donnees = f.read()
+    lignes = donnees.splitlines()
+    # print(lignes)
 
-    for line in lines:
-        tally = line.split(',')
-        # print(tally)
-        team = tally[0]
-        medals = tally[1]
-        chart.add(team, int(medals))  # Make medals a number
+    for ligne in lignes:
+        decompte = ligne.split(',')
+        # print(decompte)
+        equipe = decompte[0]
+        medailles = decompte[1]
+        graphique.add(equipe, int(medailles))  # Convertir les médailles en nombre
 
-# Display the chart
-chart.render()
+# Afficher le graphique
+graphique.render()
