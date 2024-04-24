@@ -1,58 +1,58 @@
-## Load data from a file
+## Charger les données à partir d'un fichier
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-The chart looks good! But, almost 150 nations have competed in the Olympics. To chart them, you're going to load their data from a file. It will save a lot of typing!
+Le graphique est chouette ! Mais près de 150 nations ont participé aux Jeux olympiques. Pour les présenter sous forme de graphique, tu vas charger leurs données à partir d'un fichier. Cela t'évitera de saisir beaucoup de données !
 </div>
 <div>
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="300px"}
+![Un graphique à barres montrant le nombre de médailles de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent si on clique sur les noms des nations.](images/adjust_chart.gif){:width="300px"}
 </div>
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Computers and data**</span> You're just starting to learn how to get your computer work with data. Computers can do amazing things with the right data. And they can read more data in minutes than a human could in years. Python is one of the best programming languages there is for data. Python is what the YouTube algorithm, that picks the videos to show you, is made with.
+<span style="color: #0faeb0">**Ordinateurs et données**</span> Tu commences tout juste à apprendre à utiliser ton ordinateur pour qu'il traite des données. Les ordinateurs peuvent faire des choses étonnantes avec les bonnes données. Et ils peuvent lire plus de données en quelques minutes qu’un humain ne pourrait le faire en plusieurs années. Python est l'un des meilleurs langages de programmation qui existent pour les données. Python est la base de l'algorithme YouTube, qui sélectionne les vidéos à te montrer.
 </p>
 
 --- task ---
 
-Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Rapsberry Pi code editor will open in another browser tab.
+Ouvre le [deuxième projet de démarrage](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. Le Code Editor Raspberry Pi s'ouvre dans un autre onglet du navigateur.
 
-If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
+Si tu as un compte Raspberry Pi, tu peux cliquer sur **Enregistrer** pour enregistrer une copie du code de démarrage dans ta bibliothèque.
 
 --- collapse ---
 
 ---
-title: Working offline
+title: Travailler hors ligne
 ---
 
-You will need `starter2.py` and the `.csv` files for this step.
+Tu auras besoin de `starter2.py` et des fichiers `.csv` pour cette étape.
 
 --- /collapse ---
 
 --- /task ---
 
-There are several `.csv` files included in this starter project that contain the data you need for your charts.
+Ce projet de démarrage inclut plusieurs fichiers `.csv` qui contiennent les données dont tu as besoin pour tes graphiques.
 
 --- task ---
 
-Open `medals.csv` and look at the data in it. See how each line has a team name and the number of medals they have won, separated by a comma.
+Ouvre `medals.csv` et examine les données qu'il contient. Remarque comme chaque ligne porte le nom d'une équipe et le nombre de médailles qu'elle a remportées, séparés par une virgule.
 
-![The Raspberry Pi code editor with medals file highlighted and open, displaying a list of countries and medal numbers seperated with a comma.](images/medals-tab.png)
+![Le Code Editor Raspberry Pi avec le fichier de médailles mis en surbrillance et ouvert, affichant une liste de pays et de nombres de médailles séparés par une virgule.](images/medals-tab.png)
 
 --- /task ---
 
 <div style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**CSV files**</span> are Comma-Separated Values files. They contain data in rows and columns, like a table. Each line is a row, with commas separating that row's values into columns.
-![A few lines of a csv file.](images/csv_sample.png){:width="200px"}
+<span style="color: #0faeb0">**Les fichiers CSV**</span> sont des fichiers de valeurs séparées par des virgules. Ils contiennent des données en lignes et en colonnes, comme un tableau. Chaque ligne est un enregistrement, avec des virgules séparant les valeurs de cette ligne en colonnes.
+![Quelques lignes d'un fichier csv.](images/csv_sample.png){:width="200px"}
 </div>
 
-You'll need to turn each line of `medals.csv` into a text string and a number in Python, like in the lists you made.
+Tu devras convertir chaque ligne de `medals.csv` en une chaîne de texte et un nombre en Python, comme dans les listes que tu as créées.
 
 --- task ---
 
-Click on the `main.py` tab and add code to load the file into a variable by using `with open() as`. Then use a `for` loop to `print` each line from the variable.
+Clique sur l'onglet `main.py` et ajoute du code pour charger le fichier dans une variable en utilisant `with open() as`. Utilise ensuite une boucle `for` pour imprimer, `print`, chaque ligne de la variable.
 
-The `for` loop will let you repeat code. So you will load hundreds of teams to your chart with just a few lines of code!
+La boucle `for` te permettra de répéter le code. Tu peux donc charger des centaines d’équipes dans ton graphique avec seulement quelques lignes de code !
 
 [[[generic-python-file-read]]]
 
@@ -68,25 +68,25 @@ with open('medals.csv') as f: for line in f: print(line) --- /code ---
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out.
+**Test :** exécute ton code, et regarde le texte qu'il imprime.
 
-Notice that each line has two values, separated by commas.
+Tu remarqueras que chaque ligne comporte deux valeurs, séparées par des virgules.
 
-![A list of text strings, printed out over many lines.](images/lines.png)
+![Une liste de chaînes de texte, imprimées sur plusieurs lignes.](images/lines.png)
 
-**Debug:** If the code doesn't work, make sure you have indented it under the `with` line, like in the example above.
+**Débogage :** si le code ne fonctionne pas, vérifie que tu as bien mis une indentation sous la ligne `with`, comme dans l'exemple ci-dessus.
 
 --- /task ---
 
-Each string that your loop prints is made up of two pieces separated by a comma. Your `chart.add()` function needs each of those pieces as separate inputs.
+Chaque chaîne imprimée par ta boucle est composée de deux éléments séparés par une virgule. Ta fonction `graphique.add()` a besoin de chacun de ces éléments comme entrées distinctes.
 
-The `split()` function breaks a string into a list, just like the lists you made earlier. The `split(',')` function makes a new list item every time it sees a comma.
+La fonction `split()` divise une chaîne en une liste, tout comme les listes que tu as créées précédemment. La fonction `split(',')` crée un nouvel élément de liste à chaque fois qu'elle voit une virgule.
 
 --- task ---
 
-Put a `#` in front of the code that prints `line`. This will turn that code into a comment, so Python will ignore it.
+Mets un `#` devant le code qui imprime la `ligne`. Cela transformera ce code en commentaire, donc Python l'ignorera.
 
-Use the `split()` method to break up each sting at a `,` and then store the first and second pieces in a new list. Then print those lists out.
+Utilise la méthode `split()` pour diviser chaque chaîne au niveau de `,` et stocker ensuite le premier et le deuxième élément dans une nouvelle liste. Imprime ensuite ces listes.
 
 --- code ---
 ---
@@ -95,25 +95,25 @@ line_highlights: 12-13
 ---
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') # Breaks the string into a list print(pieces) # Print each list --- /code ---
 
-**Tip:** `split()` can split a string into a list around any text you want. You can split on punctuation, a letter, or even whole words.
+**Astuce :** `split()` peut diviser une chaîne en une liste autour du texte de ton choix. Tu peux la diviser au niveau de la ponctuation, d'une lettre ou même de mots entiers.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the text it prints out. Each line should be a list with two items. You may notice that the second item has `\n` at the end. `\n` is usually invisible. It tells the computer it has reached the end of the line in a file.
+**Test :** exécute ton code, et regarde le texte qu'il imprime. Chaque ligne doit être une liste de deux éléments. Tu remarqueras peut-être que le deuxième élément a `\n` à la fin. `\n` est généralement invisible. Il indique à l'ordinateur qu'il a atteint la fin de la ligne dans un fichier.
 
-![Many lists, each with two items, printed out.](images/tally.png){:width="400px"}
+![De nombreuses listes, chacune contenant deux éléments, sont imprimées.](images/tally.png){:width="400px"}
 
-**Debug:** If your `pieces` are printing out as lists with only one item then check that you have `','` in the `()` of `line.split()`.
+**Débogage :** si tes `elements` impriment des listes avec un seul élément, alors vérifie que tu as bien `','` dans le `()` de `ligne.split()`.
 
-**Debug:** If you see a message about `split` being 'not defined', check that you have included `line.` before it.
+**Débogage :** si tu vois un message indiquant que `split` est "non défini", vérifie que tu as bien inclus `ligne.` avant.
 
 --- /task ---
 
 --- task ---
 
-Load your data into the chart as part of your `for` loop. `team` is a string so can be used as a label on the chart. `medal` is currently a string, but needs to be converted to a number. You can use the `int()` function to **cast** a string to a number.
+Charge tes données dans le graphique dans le cadre de ta boucle `for` . `equipe` est une chaîne et peut donc être utilisée comme libellé sur le graphique. `medaille` est actuellement une chaîne, mais doit être convertie en nombre. Tu peux utiliser la fonction `int()` pour **convertir** une chaîne en nombre.
 
 --- code ---
 ---
@@ -122,22 +122,22 @@ line_highlights: 14-16
 ---
 with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',') #print(pieces) team = pieces[0] medals = pieces[1] chart.add(team, int(medals))  # Make medals a number --- /code ---
 
-**Tip:** You can now use `#` to turn `print(pieces)` into a comment too.
+**Astuce :** tu peux maintenant utiliser `#` pour transformer `print(elements)` en un commentaire également.
 
 --- /task ---
 
 --- task ---
 
-**Test:** Run your code and look at the chart it creates. Try hovering over some of the bars, or clicking on the names of teams to add and remove them from the chart.
+**Test :** exécute ton code, et regarde le graphique qu'il crée. Essaie de survoler certaines barres ou de cliquer sur les noms des équipes pour les ajouter et les supprimer du graphique.
 
-![A bar chart showing the medal counts of many nations. Information appears when the mouse hovers over a bar. Bars disappear as the names of nations are clicked.](images/adjust_chart.gif){:width="400px"}
+![Un graphique à barres montrant le nombre de médailles de nombreuses nations. Les informations apparaissent lorsque la souris survole une barre. Les barres disparaissent à mesure que l'on clique sur les noms des nations.](images/adjust_chart.gif){:width="400px"}
 
-**Debug:** If your chart is empty, check that you have `int(medals)` in your `chart.add()`.
+**Débogage :** si ton graphique est vide, vérifie que tu as `int(medailles)` dans `graphique.add()`.
 
-**Debug:** If you see a message about an `IndexError`, your code is trying to get a value from a list index that doesn't exist (e.g. `pieces[2]`). To fix this:
- - Check each of your `team` and `medals` variables to be sure you are only using `0` and `1` as indexes.
- - Check the printed `pieces` lists to be sure they have two items: `['Tonga', '1\n']`, not `['Tonga,1\n']`. If they don't, then check that you have `','` in the `()` of `line.split()`.
- - Check you do not have a blank line at the bottom of your .csv file.
+**Débogage :** si tu vois un message `IndexError`, ton code essaie d'obtenir une valeur à partir d'un index de liste qui n'existe pas (par exemple, `elements[2]`). Pour résoudre cette erreur :
+ - Vérifie chacune de tes variables `equipe` et `medailles` pour t'assurer que tu n'utilises que `0` et `1` comme index.
+ - Vérifie les listes `elements` imprimées pour t'assurer qu'elles ont deux éléments : `['Tonga', '1\n']`, et non `['Tonga,1\n']`. Si ce n'est pas le cas, vérifie que tu as `','` dans les `()` de `ligne.split()`.
+ - Vérifie que tu n'as pas de ligne vide en bas de ton fichier .csv.
 
 --- /task ---
 
