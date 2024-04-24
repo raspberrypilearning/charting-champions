@@ -1,10 +1,10 @@
-## What next?
+## Et ensuite ?
 
-If you are following the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path, you can move on to the [Solar system](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In that project, you will make a model of the solar system to teach people about the planets.
+Si tu suis le parcours [Plus de Python](https://projects.raspberrypi.org/en/pathways/more-python), tu peux passer au projet [Le système solaire](https://projects.raspberrypi.org/en/projects/solar-system-simulator/). Dans ce projet, tu réaliseras un modèle du système solaire pour éduquer les gens sur les planètes.
 
 --- print-only ---
 
-![The solar system project.](images/solar_system_simulator.png)
+![Le projet de système solaire.](images/solar_system_simulator.png)
 
 --- /print-only ---
 
@@ -15,4 +15,4 @@ If you are following the [More Python](https://projects.raspberrypi.org/en/pathw
 
 --- /no-print ---
 
-If you want to have more fun exploring Python, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
+Si tu veux t'amuser davantage en explorant Python, tu peux essayer l'un de [ces projets](https://projects.raspberrypi.org/en/projects?software%5B%5D=python).
