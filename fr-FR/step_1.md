@@ -1,25 +1,25 @@
 <div class="c-survey-banner" style="width:100%">
-  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Take our survey</a> to help make our Code Editor better!
+  <a class="c-survey-banner__link" href="https://form.raspberrypi.org/f/code-editor-feedback" target="_blank">Participe à notre enquête</a> pour nous aider à améliorer notre Code Editor !
 </div>
 
-## You will make
+## Ce que tu vas faire
 
-Discover the power of lists in Python by creating an interactive chart of Olympic medals.
+Découvre la puissance des listes en Python en créant un graphique interactif des médailles olympiques.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The Olympic Games**</span> began in 1896: thousands of athletes represent hundreds of nations from around the world. The modern games were inspired by ancient contests held in Olympia, Greece.
+<span style="color: #0faeb0">**Les Jeux Olympiques**</span> ont débuté en 1896 : des milliers d'athlètes représentent des centaines de nations du monde entier. Les jeux modernes s'inspirent des anciennes compétitions organisées à Olympie, en Grèce.
 </p>
 
-You will:
- - Use **lists** to store related data
- - Create a **chart** using the `pygal` library
- - Load data by having your program **read a file**
+Tu vas devoir :
+ - Utiliser des **listes** pour stocker les données associées
+ - Créer un **graphique** en utilisant la bibliothèque `pygal`
+ - Charger des données en demandant à ton programme de **lire un fichier**
 
 --- no-print --- --- task ---
-### Play ▶️
+### Joue ▶️
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Run the program to load the chart. Notice that the chart is interactive. What happens when you click on the top three nations in the key on the left?
+Exécute le programme pour charger le graphique. Tu remarqueras que le graphique est interactif. Que se passe-t-il lorsque tu cliques sur les trois premières nations dans la légende de gauche ?
 </div>
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/charting-champions-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
