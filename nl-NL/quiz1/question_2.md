@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-Your project used data loaded from a file to let you chart hundreds of pieces of information. Which of these pieces of code would correctly load `data.csv` into a variable as a text string?
+Jouw project gebruikte gegevens die uit een bestand waren geladen, zodat je honderden stukjes informatie in kaart kon brengen. Welke van deze stukjes code zou `data.csv` correct in een variabele laden als een string?
 
 --- choices ---
 
@@ -16,7 +16,7 @@ with open('data.csv') as f:
 ```
   --- feedback ---
 
-  That's correct! This will load `data.csv` as `f` and then `read()` it into `info` as a text string.
+  Dat is correct! Hierdoor wordt `data.csv` geladen als `f` en vervolgens ingelezen via `read()` in `info` als string.
 
   --- /feedback ---
 
@@ -28,7 +28,7 @@ open('data.csv') as f:
 
   --- feedback ---
 
-  Not quite, this is very close, but it's missing something important at the start.
+  Niet helemaal, dit komt heel dichtbij, maar er ontbreekt in het begin iets belangrijks.
 
   --- /feedback ---
 
@@ -40,7 +40,7 @@ info = f.read()
 
   --- feedback ---
 
-  Very close! This is all the correct code, but the indentation is wrong.
+  Heel dichtbij! Dit is allemaal de juiste code, maar de inspringing is verkeerd.
 
   --- /feedback ---
 
@@ -52,7 +52,7 @@ with open('data.csv') as f:
 
   --- feedback ---
 
-  Not exactly — the `read()` function belongs to the file stored in `f`, so you have to call it with `.` instead of by passing `f` to it.
+  Niet precies: de functie `read()` hoort bij het bestand dat is opgeslagen in `f`, dus je moet het aanroepen met `.` in plaats van `f` eraan door te geven.
 
   --- /feedback ---
 
