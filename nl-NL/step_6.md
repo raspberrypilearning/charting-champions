@@ -1,51 +1,51 @@
-## Upgrade your project
+## Verbeter je project
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, change how your chart looks, or what data it uses.
+In deze stap kun je wijzigingen aanbrengen in hoe je grafiek eruitziet of welke gegevens deze gebruikt.
 </div>
 <div>
-![A pie chart showing the running time of Marvel films.](images/mcu_pie.png){:width="300px"}
+![Een cirkeldiagram dat de speelduur van Marvel-films laat zien.](images/mcu_pie.png){:width="300px"}
 </div>
 </div>
 
-### Use a pie chart
-Try using a pie chart for a different look, or to show how something is divided.
+### Gebruik een cirkeldiagram
+Probeer een cirkeldiagram te gebruiken voor een ander uiterlijk, of om te laten zien hoe iets is verdeeld.
 
 --- task ---
 
-To create a pie chart instead of a bar chart, change the import from `pygal` to `Pie` instead of `Bar`. Do the same for the function you call to create `chart`.
+Om een cirkeldiagram te maken in plaats van een staafdiagram, verander dan de import vanuit `pygal` naar `Pie` in plaats van `Bar`. Doe hetzelfde voor de functie die je aanroept om de `grafiek`te maken.
 
 --- /task ---
 
-### Use a different set of data
-You can load and chart any data that's in a `.csv` file with the program you've written.
+### Gebruik een andere set gegevens
+Je kunt allerlei gegevens in een `.csv` bestand laden en in kaart brengen met het programma dat je hebt geschreven.
 
 --- task ---
 
-**Choose:** Pick a different datafile for your project. There are two available:
+**Kies:** Kies een ander gegevensbestand voor je project. Er zijn er twee beschikbaar:
 
- - `mcu.csv` is the runtime and gross income from the Marvel Cinematic Universe films
- - `carbon.csv` is the total (thousands of tons) and per-person (tons) carbon dioxide emissions of different countries and regions
+ - `mcu.csv` is de looptijd en het bruto-inkomen van de Marvel Cinematic Universe-films
+ - `carbon.csv` is de totale (duizenden tonnen) en per persoon (ton) kooldioxide-uitstoot van verschillende landen en regio's
 
 --- /task ---
 
 --- task ---
 
-Update the code that reads from `medals.csv` to read from your new file.
+Verander de code die leest uit `medailles.csv` om gegevens uit je nieuwe bestand te lezen.
 
-These files have more than one column of numbers. Use indexes on the `tally` list to choose which to add to your chart.
+Deze bestanden bevatten meer dan één kolom met getallen. Gebruik indexen uit de `tally` lijst om te kiezen welke u aan uw diagram wilt toevoegen.
 
-The carbon dioxide data uses numbers with decimals. To convert them from text strings, you'll need to use `float()` instead of `int()`.
+De kooldioxidegegevens gebruiken getallen met decimalen. Om ze van tekstreeksen te converteren, moet je `float()` gebruiken in plaats van `int()`.
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Completed project
+title: Voltooid project
 ---
 
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"}.
+Je kunt het [voltooide project hier](https://editor.raspberrypi.org/en/projects/charting-champions-example){:target="_blank"} bekijken.
 
 --- /collapse ---
 
