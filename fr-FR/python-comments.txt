@@ -1,31 +1,31 @@
-Create a chart
+Créer un graphique
 
-Olympic medals
+Médailles olympiques
 
-Display the chart
+Afficher le graphique
 
-United States
+États-Unis
 
-Great Britain
+Grande-Bretagne
 
 France
 
-Germany
+Allemagne
 
-China
+Chine
 
-Add data to the chart
+Ajouter des données au graphique
 
-Breaks the string into a list
+Diviser la chaîne en une liste
 
-Print each list
+Imprimer chaque liste
 
-Make medals a number
+Convertir les médailles en nombre
 
 Population
 
-Make population a number
+Convertir la population en nombre
 
-GDP
+PIB
 
-Make GDP a number
+Convertir le PIB en nombre
