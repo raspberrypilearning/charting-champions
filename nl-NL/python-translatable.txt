@@ -1,37 +1,37 @@
-chart
+grafiek
 
-line
+lijn
 
-pieces
+stukken
 
 team
 
-medals
+medailles
 
-population
+bevolking
 
-gdp
+bbp
 
-names
+namen
 
-cat
+kat
 
-dog
+hond
 
-rabbit
+konijn
 
 info
 
-colours
+kleuren
 
-red
+rood
 
-green
+groen
 
-blue
+blauw
 
-yellow
+geel
 
-pink
+roze
 
-brown
+bruin
