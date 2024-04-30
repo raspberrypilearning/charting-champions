@@ -1,149 +1,148 @@
-"États-Unis","2629"
-"Union soviétique","1010"
-"Grande-Bretagne","916"
-"France","751"
-"Allemagne","655"
-"Chine","636"
-"Italie","618"
-"Australie","547"
-"Hongrie","511"
-"Suède","503"
-"Japon","497"
-"Russie","423"
-"Allemagne de l'Est","409"
-"Canada","326"
-"Pays-Bas","322"
-"Roumanie","308"
-"Finlande","305"
-"Pologne","298"
-"Corée du Sud","288"
-"Cuba","235"
-"Bulgarie","224"
-"Suisse","206"
-"Danemark","205"
-"Allemagne de l'Ouest","204"
-"Espagne","169"
-"Norvège","163"
-"Belgique","157"
-"Brésil","150"
-"Tchécoslovaquie","143"
-"Ukraine","139"
-"Nouvelle-Zélande","137"
-"Grèce","121"
-"Équipe unifiée d'Allemagne","118"
-"Kenya","113"
-"Turquie","103"
-"Autriche","96"
-"Afrique du Sud","89"
-"Jamaïque","88"
-"Biélorussie","85"
-"Yougoslavie","83"
-"Argentine","77"
-"Iran","76"
-"Mexique","72"
-"Kazakhstan","71"
-"République tchèque","67"
-"Éthiopie","58"
-"Corée du Nord","55"
-"Azerbaïdjan","49"
-"Croatie","41"
-"Géorgie","40"
-"Égypte","38"
-"Indonésie","37"
-"Taipei chinois","36"
-"Estonie","36"
-"Ouzbékistan","36"
-"Inde","35"
-"Irlande","35"
-"Thaïlande","35"
-"Colombie","34"
-"Slovaquie","32"
-"Mongolie","30"
-"Portugal","28"
-"Slovénie","28"
-"Nigeria","27"
-"Lituanie","26"
-"Maroc","24"
-"Serbie","24"
-"Lettonie","21"
-"Trinité-et-Tobago","19"
-"Venezuela","19"
-"Arménie","18"
-"Algérie","17"
-"Bahamas","16"
-"Tunisie","15"
-"Philippines","14"
-"Chili","13"
-"Israël","13"
-"Malaisie","13"
-"République dominicaine","12"
-"Ouganda","11"
-"Pakistan","10"
-"Porto Rico","10"
-"Uruguay","10"
-"Hong Kong","9"
-"Serbie et Monténégro","9"
-"Qatar","8"
-"Empire russe","8"
-"Zimbabwe","8"
-"Kirghizistan","7"
-"Cameroun","6"
-"Moldavie","6"
-"Équateur","5"
-"Ghana","5"
-"Namibie","5"
-"Singapour","5"
-"Viêt Nam","5"
-"Bahreïn","4"
-"Bohême","4"
-"Costa Rica","4"
-"Islande","4"
-"Côte d'Ivoire","4"
-"Liban","4"
-"Pérou","4"
-"Arabie Saoudite","4"
-"Syrie","4"
-"Tadjikistan","4"
-"Fidji","3"
-"Grenade","3"
-"Jordanie","3"
-"Kosovo","3"
-"Koweit","3"
-"Luxembourg","3"
-"Panama","3"
-"Saint-Marin","3"
-"Afghanistan","2"
-"Bermudes","2"
-"Botswana","2"
-"Antilles britanniques","2"
-"Burundi","2"
-"Haïti","2"
-"Mozambique","2"
-"Niger","2"
-"Macédoine du Nord","2"
-"Sri Lanka","2"
-"Surinam","2"
-"Tanzanie","2"
-"Émirats Arabes Unis","2"
-"Zambie","2"
-"Barbade","1"
-"Burkina Faso","1"
-"Chypre","1"
-"Djibouti","1"
-"Érythrée","1"
-"Gabon","1"
-"Guatemala","1"
-"Guyane","1"
-"Irak","1"
-"Maurice","1"
-"Monténégro","1"
-"Antilles néerlandaises","1"
-"Paraguay","1"
-"Samoa","1"
-"Sénégal","1"
-"Soudan","1"
-"Togo","1"
-"Tonga","1"
-"Turkménistan","1"
-"Îles Vierges américaines","1"
-"Liechtenstein","0"
+Union soviétique,1010
+Grande-Bretagne,916
+France,751
+Allemagne,655
+Chine,636
+Italie,618
+Australie,547
+Hongrie,511
+Suède,503
+Japon,497
+Russie,423
+Allemagne de l'Est,409
+Canada,326
+Pays-Bas,322
+Roumanie,308
+Finlande,305
+Pologne,298
+Corée du Sud,288
+Cuba,235
+Bulgarie,224
+Suisse,206
+Danemark,205
+Allemagne de l'Ouest,204
+Espagne,169
+Norvège,163
+Belgique,157
+Brésil,150
+Tchécoslovaquie,143
+Ukraine,139
+Nouvelle-Zélande,137
+Grèce,121
+Équipe unifiée d'Allemagne,118
+Kenya,113
+Turquie,103
+Autriche,96
+Afrique du Sud,89
+Jamaïque,88
+Biélorussie,85
+Yougoslavie,83
+Argentine,77
+Iran,76
+Mexique,72
+Kazakhstan,71
+République tchèque,67
+Éthiopie,58
+Corée du Nord,55
+Azerbaïdjan,49
+Croatie,41
+Géorgie,40
+Égypte,38
+Indonésie,37
+Taipei chinois,36
+Estonie,36
+Ouzbékistan,36
+Inde,35
+Irlande,35
+Thaïlande,35
+Colombie,34
+Slovaquie,32
+Mongolie,30
+Portugal,28
+Slovénie,28
+Nigeria,27
+Lituanie,26
+Maroc,24
+Serbie,24
+Lettonie,21
+Trinité-et-Tobago,19
+Venezuela,19
+Arménie,18
+Algérie,17
+Bahamas,16
+Tunisie,15
+Philippines,14
+Chili,13
+Israël,13
+Malaisie,13
+République dominicaine,12
+Ouganda,11
+Pakistan,10
+Porto Rico,10
+Uruguay,10
+Hong Kong,9
+Serbie et Monténégro,9
+Qatar,8
+Empire russe,8
+Zimbabwe,8
+Kirghizistan,7
+Cameroun,6
+Moldavie,6
+Équateur,5
+Ghana,5
+Namibie,5
+Singapour,5
+Viêt Nam,5
+Bahreïn,4
+Bohême,4
+Costa Rica,4
+Islande,4
+Côte d'Ivoire,4
+Liban,4
+Pérou,4
+Arabie Saoudite,4
+Syrie,4
+Tadjikistan,4
+Fidji,3
+Grenade,3
+Jordanie,3
+Kosovo,3
+Koweit,3
+Luxembourg,3
+Panama,3
+Saint-Marin,3
+Afghanistan,2
+Bermudes,2
+Botswana,2
+Antilles britanniques,2
+Burundi,2
+Haïti,2
+Mozambique,2
+Niger,2
+Macédoine du Nord,2
+Sri Lanka,2
+Surinam,2
+Tanzanie,2
+Émirats Arabes Unis,2
+Zambie,2
+Barbade,1
+Burkina Faso,1
+Chypre,1
+Djibouti,1
+Érythrée,1
+Gabon,1
+Guatemala,1
+Guyane,1
+Irak,1
+Maurice,1
+Monténégro,1
+Antilles néerlandaises,1
+Paraguay,1
+Samoa,1
+Sénégal,1
+Soudan,1
+Togo,1
+Tonga,1
+Turkménistan,1
+Îles Vierges américaines,1
+Liechtenstein,0
