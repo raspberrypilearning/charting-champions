@@ -15,7 +15,7 @@ The chart looks good! But, almost 150 nations have competed in the Olympics. To 
 
 --- task ---
 
-Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Rapsberry Pi code editor will open in another browser tab.
+Open the [second starter project](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
 If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
 
