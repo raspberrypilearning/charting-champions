@@ -21,10 +21,10 @@ Waarom hebben zij misschien wel de meeste medailles?
 
 --- /task ---
 
-Het zou een goed idee kunnen zijn om zowel naar de populatie als naar de rijkdom van de teams te kijken, om te zien of er een patroon te ontdekken is.
+Het zou een goed idee kunnen zijn om zowel naar de bevolking als naar de rijkdom van de teams te kijken, om te zien of er een patroon te ontdekken is.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Gegevensanalyse:**</span> Mensen doen dit soort onderzoeken al lang voordat computers werden uitgevonden. In de jaren vijftig van de negentiende eeuw gebruikte Florence Nightingale, een verpleegster, bijvoorbeeld tabellen en grafieken om het belang van ziektepreventie bij de zorg voor zieken aan te tonen. 
+<span style="color: #0faeb0">**Gegevensanalyse:**</span> Mensen deden dit soort onderzoeken al lang voordat computers werden uitgevonden. In de jaren vijftig van de negentiende eeuw gebruikte Florence Nightingale, een verpleegster, bijvoorbeeld tabellen en grafieken om het belang van ziektepreventie bij de zorg voor zieken aan te tonen. 
 ![Florence Nightingale's overzicht van doodsoorzaken.](images/nightingale.jpeg){:width="300px"}
 </p>
 
@@ -88,7 +88,7 @@ with open('gdp.csv') as f: for line in f: #print(line) pieces = line.split(',') 
 
 Voer nu jouw programma uit en kijk naar de grafiek die wordt gemaakt.
 
-![Een staafdiagram dat het bbp van veel landen weergeeft. Informatie verschijnt wanneer de muis over een balk beweegt. Balken verdwijnen als er op de namen van landen wordt geklikt.](images/gdp.gif){:width="500px"}
+![Een staafdiagram dat het BBP van veel landen weergeeft. Informatie verschijnt wanneer de muis over een balk beweegt. Balken verdwijnen als er op de namen van landen wordt geklikt.](images/gdp.gif){:width="500px"}
 
 Beweeg de muis over enkele van de hoogste balken en kijk tot welke landen ze behoren. Klik op de namen van de echt grote om ze uit de grafiek te verwijderen; Zo kun je de anderen beter bekijken. Had een van de teams van de rijkste landen een zeer groot aantal medailles?
 
@@ -106,7 +106,7 @@ Wat heb je ontdekt door je programma te gebruiken om naar deze gegevens te kijke
 ---
 title: Jamaica doet het beter dan grotere en rijkere landen
 ---
-Dit is geen probleem uit een wiskunde boek. Het antwoord is dus niet eenvoudig. Kijk bijvoorbeeld naar Jamaica. Jamaica heeft geen grote bevolking of een groot bbp.
+Dit is geen probleem uit een wiskundeboek. Het antwoord is dus niet eenvoudig. Kijk bijvoorbeeld naar Jamaica. Jamaica heeft geen grote bevolking of een groot BBP.
 
 Mexico, Ierland, Portugal, Saoedi-Arabië en Singapore hebben allemaal meer mensen en meer geld. Ze hebben zelfs meer geld per persoon. Maar Jamaica heeft meer medailles gewonnen dan wie dan ook!
 
