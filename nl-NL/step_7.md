@@ -1,4 +1,4 @@
-## Wat nu?
+## Wat kun je verder nog doen?
 
 Als je het [Meer Python](https://projects.raspberrypi.org/en/pathways/more-python) pad volgt, kun je doorgaan naar het [Zonnestelsel](https://projects.raspberrypi.org/en/projects/solar-system-simulator/) project. In dat project maak je een model van het zonnestelsel om mensen over de planeten te leren.
 
