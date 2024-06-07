@@ -4,8 +4,8 @@ hero_image: images/banner.png
 description:
   - Ontdek de kracht van lijsten in Python door een interactieve grafiek te maken
   - van Olympische medailles
-meta_title: Python-coderingsprojecten voor kinderen en tieners | Kampioenen in kaart brengen
-meta_description: Leer Python met de codeerprojecten van de Raspberry Pi Foundation voor kinderen en tieners. Ontdek de kracht van lijsten in Python door een overzicht van Olympische medailles te maken.
+meta_title: Python-programmeerprojecten voor kinderen en tieners | Kampioenen in kaart brengen
+meta_description: Leer Python met de programmeerprojecten van de Raspberry Pi Foundation voor kinderen en tieners. Ontdek de kracht van lijsten in Python door een overzicht van Olympische medailles te maken.
 version: 4
 listed: true
 copyedit: true
