@@ -15,7 +15,7 @@ with open('medals.csv') as f:
         # print(totaal)
         team = totaal[0]
         medailles = totaal[1]
-        chart.add(team,int(medailles)) # Maak van medailles een getal
+        grafiek.add(team,int(medailles)) # Maak van medailles een getal
 
 # Toon de grafiek
 grafiek.render()
