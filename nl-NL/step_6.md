@@ -9,17 +9,17 @@ In deze stap kun je wijzigingen aanbrengen in hoe je grafiek eruitziet of welke 
 </div>
 </div>
 
-### Gebruik een cirkeldiagram
-Probeer een cirkeldiagram te gebruiken voor een ander uiterlijk, of om te laten zien hoe iets is verdeeld.
+### Gebruik een taartdiagram
+Probeer een taartdiagram te gebruiken voor een ander uiterlijk, of om te laten zien hoe iets is verdeeld.
 
 --- task ---
 
-Om een cirkeldiagram te maken in plaats van een staafdiagram, verander dan de import vanuit `pygal` naar `Pie` in plaats van `Bar`. Doe hetzelfde voor de functie die je aanroept om de `grafiek`te maken.
+Om een taartdiagram te maken in plaats van een staafdiagram, verander dan de import vanuit `pygal` naar `Pie` in plaats van `Bar`. Doe hetzelfde voor de functie die je aanroept om de `grafiek`te maken.
 
 --- /task ---
 
-### Gebruik een andere set gegevens
-Je kunt allerlei gegevens in een `.csv` bestand laden en in kaart brengen met het programma dat je hebt geschreven.
+### Gebruik een andere verzameling gegevens
+Je kunt allerlei gegevens van een `.csv` bestand laden en in kaart brengen met het programma dat je hebt geschreven.
 
 --- task ---
 
