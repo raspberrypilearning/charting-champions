@@ -15,9 +15,9 @@ De grafiek ziet er goed uit! Maar bijna 150 landen hebben deelgenomen aan de Oly
 
 --- task ---
 
-Open het [tweede startproject](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. De Raspberry Pi code-editor wordt geopend in een ander browsertabblad.
+Open het [tweede startproject](https://editor.raspberrypi.org/en/projects/charting-champions-second-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
 
-Als je een Raspberry Pi-account hebt, kun je op de **Save** klikken om een kopie van de startcode op te slaan in je bibliotheek.
+Als je een Raspberry Pi-account hebt, kun je op de **Save**-knop klikken om een kopie van de startcode op te slaan in je bibliotheek.
 
 --- collapse ---
 
@@ -78,13 +78,13 @@ Merk op dat elke regel twee waarden heeft, gescheiden door komma's.
 
 --- /task ---
 
-Elke string die door jouw lus wordt afgedrukt, bestaat uit twee stukken, gescheiden door een komma. Je functie `chart.add()` heeft elk van deze onderdelen als afzonderlijke invoer nodig.
+Elke string die door jouw lus wordt afgedrukt, bestaat uit twee stukken, gescheiden door een komma. Je functie `grafiek.add()` heeft elk van deze onderdelen als afzonderlijke invoer nodig.
 
 De functie `split()` verdeelt een string in een lijst, net zoals de lijsten die je eerder hebt gemaakt. De functie `split(',')` maakt een nieuw lijstitem telkens wanneer er een komma staat.
 
 --- task ---
 
-Plaats een `#` voor de code die `regel`afdrukt. Hierdoor wordt die code omgezet in een comment, zodat Python deze zal negeren.
+Plaats een `#` voor de code die `regel`afdrukt. Hierdoor wordt die code omgezet in een opmerking, zodat Python deze zal negeren.
 
 Gebruik de `split()` methode om elke tekstreeks op te splitsen bij een `,` en sla vervolgens het eerste en tweede stuk op in een nieuwe lijst. Print deze lijsten vervolgens uit.
 
@@ -107,7 +107,7 @@ with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',
 
 **Fouten opsporen:** Als je `stukken` een lijst afdrukt met slechts één item, controleer dan of je `','` in de `()` van `line.split()` hebt.
 
-**Fouten opsporen:** Als je een bericht ziet dat `split` 'not defined' is, controleer dan of je `line.` ervoor hebt toegevoegd.
+**Fouten opsporen:** Als je een bericht ziet dat `split` 'not defined' is, controleer dan of je `regel.` ervoor hebt toegevoegd.
 
 --- /task ---
 
@@ -132,7 +132,7 @@ with open('medals.csv') as f: for line in f: #print(line) pieces = line.split(',
 
 ![Een staafdiagram dat de medailletellingen van veel landen weergeeft. Informatie verschijnt wanneer de muis over een balk beweegt. Balken verdwijnen als er op de namen van landen wordt geklikt.](images/adjust_chart.gif){:width="400px"}
 
-**Fouten opsporen:** Als je grafiek leeg is, controleer dan of je `int(medailles)` hebt opgenomen in je `chart.add()`.
+**Fouten opsporen:** Als je grafiek leeg is, controleer dan of je `int(medailles)` hebt opgenomen in je `grafiek.add()`.
 
 **Fouten opsporen**: Als je een bericht ziet over een `IndexError`, dan probeert je code een waarde op te halen uit een lijstindex die niet bestaat (bijv. `stukken[2]`). Om dit op te lossen:
  - Controleer elk van je `team` en `medaille` variabelen om er zeker van te zijn dat je alleen `0` en `1` als indexen gebruikt.
