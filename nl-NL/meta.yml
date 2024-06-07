@@ -1,0 +1,31 @@
+---
+title: Kampioenen in kaart brengen
+hero_image: images/banner.png
+description:
+  - Ontdek de kracht van lijsten in Python door een interactieve grafiek te maken
+  - van Olympische medailles
+meta_title: Python-programmeerprojecten voor kinderen en tieners | Kampioenen in kaart brengen
+meta_description: Leer Python met de programmeerprojecten van de Raspberry Pi Foundation voor kinderen en tieners. Ontdek de kracht van lijsten in Python door een overzicht van Olympische medailles te maken.
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-10-07"
+steps:
+  - title: Wat ga je maken
+  - title: Maak een grafiek
+  - title: Gegevens uit een bestand lezen
+    completion:
+      - engaged
+  - title: Onderzoek met data
+    completion:
+      - internal
+  - title: Snelle quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Verbeter je project
+  - title: Wat kun je verder nog doen?
