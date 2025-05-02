@@ -15,7 +15,7 @@ De grafiek ziet er goed uit! Maar bijna 150 landen hebben deelgenomen aan de Oly
 
 --- task ---
 
-Open het [tweede startproject](https://editor.raspberrypi.org/nl-NL/projects/charting-champions-second-starter){:target="_blank"}. The Raspberry Pi code editor will open in another browser tab.
+Open het [tweede startproject](https://editor.raspberrypi.org/nl-NL/projects/charting-champions-second-starter){:target="_blank"}. De Raspberry Pi code-editor wordt geopend in een ander browsertabblad.
 
 Als je een Raspberry Pi-account hebt, kun je op de **Save**-knop klikken om een kopie van de startcode op te slaan in je bibliotheek.
 
