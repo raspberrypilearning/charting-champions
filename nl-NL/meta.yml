@@ -7,7 +7,7 @@ description:
 meta_title: Python-programmeerprojecten voor kinderen en tieners | Kampioenen in kaart brengen
 meta_description: Leer Python met de programmeerprojecten van de Raspberry Pi Foundation voor kinderen en tieners. Ontdek de kracht van lijsten in Python door een overzicht van Olympische medailles te maken.
 version: 4
-listed: true
+listed: false
 copyedit: true
 last_tested: "2021-10-07"
 steps:
@@ -34,5 +34,3 @@ steps:
       - external
   - 
     title: Verbeter je project
-  - 
-    title: Wat kun je verder nog doen?
